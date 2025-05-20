@@ -50,9 +50,9 @@ const LoginPage = () => {
             <div className="flex flex-col items-center gap-2 group">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <img
-                  src="/public/logo2.png" // 이미지 경로를 여기에 넣으세요
+                  src="/public/newlogo2.png"
                   alt="description"
-                  className="w-12 h-12 object-contain"
+                  className="w-9 h-9 object-contain"
                 />
               </div>
               <h1 className="text-2xl font-bold mt-2">환영합니다</h1>

@@ -22,10 +22,10 @@ const NoChatSelected = () => {
 						<div className='w-16 h-16 rounded-2xl bg-primary/10 flex items-center
 						justify-center animate-bounce'>
 							<img
-								src="/public/logo2.png" // 이미지 경로를 여기에 넣으세요
-								alt="description"
-								className="w-12 h-12 object-contain"
-							/>
+                src="/public/logo2.png"
+                alt="description"
+                className="w-16 h-16 object-contain"
+              />
 						</div>
 					</div>
 				</div>

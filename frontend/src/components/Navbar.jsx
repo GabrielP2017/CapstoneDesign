@@ -47,10 +47,10 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
 						<Link to="/" className="flex items-center gap-2.5 hover:opacity-80 transition-all">
 							<div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
 							<img
-								src="/public/logo2.png" // 이미지 경로를 여기에 넣으세요
-								alt="description"
-								className="w-12 h-12 object-contain"
-							/>
+                  src="/public/newlogo2.png"
+                  alt="description"
+                  className="w-7 h-7 object-contain"
+                />
 							</div>
 							<h1 className="text-lg font-bold">마음맛집</h1>
 						</Link>
