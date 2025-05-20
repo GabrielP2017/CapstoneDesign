@@ -6,6 +6,15 @@
 ```
 cd backend
 ```
+※ backend 폴더 안에 .env 파일이 배치되어있어야한다. env파일의 양식은 다음과 같다.
+```
+CohereAPIKey = 
+Username = 
+Assistantname = 
+GroqAPIKey =
+GOOGLE_MAPS_API_KEY = 
+OPENAI_API_KEY =
+```
 
 ## 2) 가상환경 삭제
 .venv 폴더를 삭제한다.
