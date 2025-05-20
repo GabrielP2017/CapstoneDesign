@@ -36,10 +36,6 @@ backend/.env
 .vscode/
 .idea/
 
-# ┌────────── OS ──────────
-.DS_Store
-Thumbs.db
-
 # ┌────────── Logs and databases ──────────
 *.log
 *.sql
