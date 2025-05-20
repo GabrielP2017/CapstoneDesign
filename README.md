@@ -1,17 +1,28 @@
 # 백엔드 세팅 & 실행
 
+## 주의)무조건 가상환경내에서 작업해야함. 의존성 혼탁해지는걸 막기위해
+
 ## 1) 백엔드 디렉터리로 이동
 
 cd backend
 
-## 2) 의존성 설치
+## 2) 가상환경 삭제
+.venv 폴더를 삭제한다.
+
+## 3) 가상환경 설치
+python -m venv .venv
+
+## 4)가상환경 활성화
+.\.venv\Scripts\activate
+
+## 5) 의존성 설치
 
 pip install -r Requirements.txt
 
-## 3) 서버 실행
-
-### (앱 파일명이 app.py인 경우)
-
+## 6) 서버 실행
+python으로 실행하고 싶을 경우
+python app.py
+unicorn으로 실행하고 싶을 경우
 uvicorn app:app --host 0.0.0.0 --port 5000 --reload
 
 <br>
@@ -42,9 +53,7 @@ npm run dev `mac : yarn dev`
 
 ## 백엔드
 
-1. pip install pipreqs
-
-2. pipreqs . --force --encoding=utf-8
+1. pip freeze > requirements.txt
 
 ## 프론트엔드
 
