@@ -52,12 +52,6 @@ const MapModal = ({ isOpen, onClose, placeName }) => {
             exit={{ opacity: 0, scale: 1 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
           >
-            <button
-              className="absolute top-2 right-2 text-gray-600 text-xl font-bold"
-              onClick={onClose}
-            >
-              &times;
-            </button>
             <iframe
               src={embedUrl}
               width="100%"

@@ -10,7 +10,7 @@
  *   6) 음식 추천 응답에 포함된 "지도 보기" 버튼 클릭 시 모달창으로 지도 출력
  * ----------------------------------------------------------------------------------- */
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useChatStore } from "../store/useChatStore";
 import ChatHeader from "./ChatHeader";
 import MessageInput from "./MessageInput";
@@ -50,6 +50,8 @@ const ChatContainer = () => {
   // rawMessages가 undefined일 때를 방어
   const messages = Array.isArray(rawMessages) ? rawMessages : [];
 
+  const scrollRef=useRef(null);
+
   const mapRef = useRef(null); // div#map
   const linkRef = useRef(null); // a#map-link
   const hasAnimated = useRef(false);
@@ -65,6 +67,14 @@ const ChatContainer = () => {
       </div>
     );
   }
+  const scrollToBottom = () => {
+    if (scrollRef.current) {
+        scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+};
+  useEffect(()=>{
+    scrollToBottom();
+  },[messages]);
 
   // 메시지 렌더링
   return (
@@ -80,7 +90,7 @@ const ChatContainer = () => {
       className="relative flex-1 flex flex-col overflow-auto"
     >
       <ChatHeader />
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4" ref={scrollRef}>
         {messages.map((msg, idx) => (
           <div key={msg.id ?? idx} className={`chat ${msg.role === "user" ? "chat-end" : "chat-start"}`}>
             <div className="chat-header mb-1">
