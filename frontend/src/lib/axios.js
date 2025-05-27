@@ -12,9 +12,9 @@
 //    - baseURL: API 서버 기본 경로
 //    - withCredentials: cross-site Access-Control 요청에 쿠키 포함 허용
 // ────────────────────────────────────────────────────────────────────────────────────
-import axios from 'axios';
+import axios from "axios";
 
 export const axiosInstance = axios.create({
-	baseURL: "http://43.203.44.237:5000",
-	withCredentials: true,
-})
+  baseURL: import.meta.env.VITE_API_BASE_URL,
+  withCredentials: true,
+});
