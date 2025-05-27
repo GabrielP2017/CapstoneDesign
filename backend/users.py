@@ -21,10 +21,12 @@ import uuid
 from datetime import datetime
 
 
-script_directory = os.path.dirname(os.path.abspath(__file__))
-database_name = "AICHAT_database.db"
+# script_directory = os.path.dirname(os.path.abspath(__file__))
+# database_name = "AICHAT_database.db"
+# database_path = os.path.join(script_directory, database_name)
 
-database_path = os.path.join(script_directory, database_name)
+database_path = os.getenv("DB_PATH", "/data/AICHAT_database.db")
+os.makedirs(os.path.dirname(database_path), exist_ok=True)
 connection = sqlite3.connect(database_path)
 cursor = connection.cursor()
 
@@ -45,6 +47,8 @@ CREATE TABLE IF NOT EXISTS chat_logs (
     user_id INTEGER NOT NULL,
     role TEXT NOT NULL,
     message TEXT NOT NULL,
+    url TEXT,
+    name TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY(session_id) REFERENCES chat_sessions(id) ON DELETE CASCADE
 );"""
@@ -95,7 +99,7 @@ def get_db():
     conn.execute("PRAGMA foreign_keys = ON;")
     return conn
 
-def save_chat(session_id: str, user_id: int, message: str,url:str,name:str,role: str = "user"):
+def save_chat(session_id: str, user_id: int, message: str, url:str, name:str, role: str = "user"):
     conn = get_db()
     print(f"name: {name}")
     try:
@@ -181,12 +185,12 @@ def read_session_logs(session_id: str) -> list[dict]:
     conn.close()
     return [dict(r) for r in rows]
 
-def add_log(session_id: str, user_id: int, role: str, text: str) -> bool:
+def add_log(session_id: str, user_id: int, role: str, text: str, url: str | None = None, name: str | None = None) -> bool:
     conn = get_db()
     try:
         conn.execute(
-            "INSERT INTO chat_logs (session_id, user_id, role, message) VALUES (?, ?, ?, ?)",
-            (session_id, user_id, role, text)
+            "INSERT INTO chat_logs (session_id, user_id, role, message, url, name) VALUES (?, ?, ?, ?, ?, ?)",
+            (session_id, user_id, role, text, url, name)
         )
         conn.commit()
         return True
