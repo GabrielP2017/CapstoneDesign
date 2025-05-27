@@ -2,7 +2,7 @@
 # 파일 이름   : app.py
 # 설명        : FastAPI 기반 AI 챗봇 및 음식 추천 API 서버
 # 주요 기능   :
-#   1) .env 파일에서 환경 변수(SECRET_KEY, GOOGLE_MAPS_API_KEY) 로드
+#   1) .env 파일에서 환경 변수(SECRET_KEY, Maps_API_KEY) 로드
 #   2) SQLite DB 초기화 및 사용자·채팅·사진 메타 관리 유틸 함수 import
 #   3) FastAPI 앱 생성 및 CORS 설정
 #   4) 이메일 유효성 검사·비밀번호 해싱 등 헬퍼 함수 정의
@@ -48,7 +48,7 @@ from Ai.SearchContent import find_restaurant_nearby
 # ────────────────────────────────────────────────
 load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY", "capstone-secret")
-GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+Maps_API_KEY = os.getenv("Maps_API_KEY")
 DATABASE = "AICHAT_database.db"
 
 # 업로드 설정 (사용 예정)
@@ -60,7 +60,7 @@ ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 # ────────────────────────────────────────────────
 from users import (
     init_db,
-    get_db,           # sqlite 연결 + PRAGMA + row_factory
+    get_db, # sqlite 연결 + PRAGMA + row_factory
     save_chat,
     create_session, 
     read_sessions, 
@@ -141,7 +141,7 @@ def allowed_file(filename: str) -> bool:
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     return templates.TemplateResponse(
-        "index.html", {"request": request, "google_api_key": GOOGLE_MAPS_API_KEY}
+        "index.html", {"request": request, "google_api_key": Maps_API_KEY}
     )
 
 @app.get("/register", response_class=HTMLResponse)
@@ -178,7 +178,7 @@ async def api_signup(data: dict):
             "INSERT INTO users (name, email, hashed_password) VALUES (?, ?, ?)",
             (name, email, hashed)
         )
-        user_id = cur.lastrowid          # ★ 새 id 확보
+        user_id = cur.lastrowid # ★ 새 id 확보
         conn.commit()
     except sqlite3.Error as e:
         conn.rollback()
@@ -286,30 +286,32 @@ async def get_response(
     text = message.strip()
 
     # 3) 사용자 메시지 저장
-    save_chat(session_id, user_id, message ,None,None,"user") 
+    save_chat(session_id, user_id, message ,None,None,"user") #
 
     # 타임스탬프 생성
     created_at = datetime.datetime.utcnow().isoformat() + "Z"
+    
+    off_topic_message = "주제와 맞지 않는 대화입니다. 감정이나 기분에 대해 말씀해주시면 관련된 음식을 추천해 드릴게요."
 
     # 4) AI 응답 로직
     if not text:
         reply = "기분이나 명령을 입력해 주세요!"
-        save_chat(session_id, user_id, reply,None,None,"assistant")
+        save_chat(session_id, user_id, reply,None,None,"assistant") 
         return {"message": reply, "createdAt": created_at}
 
-    if is_emotion_related(text):
-        emotion, food, reply_text = classify_emotion_and_reply_with_gpt(text)
+    if is_emotion_related(text): #
+        emotion, food, reply_text = classify_emotion_and_reply_with_gpt(text) 
         if not food:
             food = random.choice(["김밥","떡볶이","비빔밥","갈비탕","파스타","치킨"])
             reply_text = f"{food} 추천해드려요!"
 
-        restaurant = find_restaurant_nearby(food)
+        restaurant = find_restaurant_nearby(food) #
         if restaurant:
             # ◀ 변경: 지도 링크 포함
             lat = restaurant.get("latitude")
             lng = restaurant.get("longitude")
             map_url = (
-                f"https://www.google.com/maps/place/?q=place_id:{restaurant["place_id"]}"
+                f"https://www.google.com/maps/place/?q=place_id:{restaurant['place_id']}"
             )
             name=restaurant.get("name")
             formatted = (
@@ -319,15 +321,7 @@ async def get_response(
                 f"평점: {restaurant.get('rating','정보 없음')}점 "
                 f"(리뷰 {restaurant.get('reviews','없음')}명)<br>"
             )
-            # if map_url:
-            #     formatted += (
-            #         f"<br><a href='{map_url}' target='_blank' "
-            #         f"style='display:inline-block;margin-top:8px;"
-            #         f"padding:6px 12px;background-color:#3B82F6;"
-            #         f"color:white;text-decoration:none;border-radius:6px;"
-            #         f"font-weight:bold;'>지도 보기</a>"
-            #     )
-            save_chat(session_id, user_id, formatted,map_url,name,"assistant")
+            save_chat(session_id, user_id, formatted,map_url,name,"assistant") #
             print(map_url)
             print("aa")
             return {
@@ -339,13 +333,12 @@ async def get_response(
             }
         else:
             reply = f"{reply_text}<br><br>근처 '{food}' 식당을 찾지 못했습니다."
-            save_chat(session_id, user_id, reply,None,None, "assistant")
+            save_chat(session_id, user_id, reply,None,None, "assistant") #
             return {"message": reply, "createdAt": created_at}
     else:
-        ai_resp = IntegratedAI(text)
-        # 5) AI 응답 저장
-        save_chat(session_id, user_id, ai_resp,None,None, "assistant")
-        return {"message": ai_resp, "createdAt": created_at}
+        # 감정 관련 내용이 아니면 모든 다른 기능(IntegratedAI 호출)을 비활성화하고 거절 메시지 반환
+        save_chat(session_id, user_id, off_topic_message, None, None, "assistant") 
+        return {"message": off_topic_message, "createdAt": created_at}
 
 # ────────────────────────────────────────────────
 # 8) 채팅 로그 API
@@ -423,9 +416,42 @@ async def api_add_message(session_id: str, body: ChatLogIn, token: Optional[str]
     user_id = current_user_id_or_401(token)
     add_log(session_id, user_id, "user", body.message)
     # AI 응답 생성 (기존 get_response 로직 재사용)
-    ai = classify_emotion_and_reply_with_gpt(body.message)
-    add_log(session_id, user_id, "assistant", ai)
-    return { "id": 0, "role":"assistant", "message": ai, "timestamp": datetime.datetime.utcnow() }
+    # 여기서는 get_response를 직접 호출하기보다 해당 로직을 따르거나 필요한 부분만 가져와야 함
+    # 현재 요청은 모든 다른 기능을 거절하므로 이 API는 사용되지 않을 가능성이 높음
+    # 만약 이 API가 다른 경로로 사용된다면 AI 응답 로직도 수정된 정책을 따라야 함
+    # 지금은 classify_emotion_and_reply_with_gpt를 호출하지만 이는 off_topic_message로 대체될 수 있음
+    
+    # 수정된 정책 적용: 감정 기반이 아니면 off_topic_message 반환
+    text = body.message.strip()
+    ai_resp = ""
+    off_topic_message_alt = "주제와 맞지 않는 대화입니다. 감정이나 기분에 대해 말씀해주시면 관련된 음식을 추천해 드릴게요."
+
+    if is_emotion_related(text): 
+        emotion, food, reply_text = classify_emotion_and_reply_with_gpt(text) 
+        if not food:
+            food = random.choice(["김밥","떡볶이","비빔밥","갈비탕","파스타","치킨"])
+            reply_text = f"{food} 추천해드려요!"
+        restaurant = find_restaurant_nearby(food) 
+        if restaurant:
+            map_url = f"https://www.google.com/maps/place/?q=place_id:{restaurant['place_id']}"
+            name = restaurant.get("name")
+            ai_resp = (
+                f"{reply_text}<br><br>"
+                f"추천 식당: <strong>{restaurant['name']}</strong><br>"
+                f"주소: {restaurant['address']}<br>"
+                f"평점: {restaurant.get('rating','정보 없음')}점 "
+                f"(리뷰 {restaurant.get('reviews','없음')}명)<br>"
+            )
+            add_log(session_id, user_id, "assistant", ai_resp, map_url, name)
+        else:
+            ai_resp = f"{reply_text}<br><br>근처 '{food}' 식당을 찾지 못했습니다."
+            add_log(session_id, user_id, "assistant", ai_resp)
+    else:
+        ai_resp = off_topic_message_alt
+        add_log(session_id, user_id, "assistant", ai_resp)
+
+    return { "id": 0, "role":"assistant", "message": ai_resp, "createdAt": datetime.datetime.utcnow(), "name": name if 'name' in locals() else None, "url": map_url if 'map_url' in locals() else None }
+
 
 @app.delete("/api/sessions/{session_id}", response_model=dict)
 async def api_delete_session(session_id: str, token: Optional[str] = Cookie(None)):
@@ -470,12 +496,10 @@ async def api_add_bookmark(
         raise HTTPException(401, "등록된 사용자가 아닙니다.")
     user_id = row["id"]
 
-
     # 3) 즐겨찾기 추가
     add_bookmark(user_id,name,url)
 
     return {"success": True, "message": "즐겨찾기 추가 성공"}
-
 
 @app.get("/api/bookmarks")
 async def api_bookmarks(
@@ -501,7 +525,6 @@ async def api_bookmarks(
     # 3) 즐겨찾기 읽어오기
     return read_bookmarks(user_id)
 
-
 @app.post("/api/delete_bookmark")
 async def api_delete_bookmark(
     request: Request,
@@ -523,7 +546,6 @@ async def api_delete_bookmark(
     if not row:
         raise HTTPException(401, "등록된 사용자가 아닙니다.")
     user_id = row["id"]
-
 
     # 3) 즐겨찾기 추가
     print(bookmark_id)
@@ -562,12 +584,10 @@ async def api_update_bookmark(
         raise HTTPException(401, "등록된 사용자가 아닙니다.")
     user_id = row["id"]
 
-
     # 3) 즐겨찾기 추가
     update_bookmark(bookmark_id,name,url)
 
     return {"success": True, "message": "즐겨찾기 수정 성공"}
-
 
 # ────────────────────────────────────────────────
 # 사진 업로드 API (대기 중)
