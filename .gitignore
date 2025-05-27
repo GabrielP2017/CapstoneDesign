@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ┌────────── Python ──────────
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -49,55 +48,3 @@ node_modules/
 dist/
 build/
 frontend/.env.production
-=======
-# ┌────────── Python ──────────
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-
-# Environments
-.env
-backend/.env
-
-# ┌────────── IDE / Editor ──────────
-.vscode/
-.idea/
-
-# ┌────────── Logs and databases ──────────
-*.log
-*.sql
-*.sqlite
-
-# ┌────────── 기타 ──────────
-# node_modules (만약 프론트엔드가 Node.js 기반이라면)
-node_modules/
-# 빌드 산출물
-dist/
-build/
-frontend/.env.production
->>>>>>> 5383d10 (최신)

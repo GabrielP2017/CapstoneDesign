@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 @import 'tailwindcss';
 @plugin 'daisyui' {
 	themes: all;
-=======
-@import 'tailwindcss';
-@plugin 'daisyui' {
-	themes: all;
->>>>>>> 5383d10 (최신)
 }
