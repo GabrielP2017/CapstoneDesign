@@ -45,10 +45,6 @@ export const useAuthStore = create((set) => ({
       set({ authUser: res.data });
       set({ authUser: { email: res.data.email, id: res.data.id, name: res.data.name } });
       localStorage.setItem("authUser", JSON.stringify(res.data));
-
-      const chat = useChatStore.getState();
-      await chat.bootstrap();
-      
     } catch (error) {
       console.log("checkAuth error:", error);
       set({ authUser: null });
@@ -98,8 +94,6 @@ export const useAuthStore = create((set) => ({
 
       readBookmarks();
       console.log("loginSuccess");
-      const chat = useChatStore.getState();
-      await chat.bootstrap();  
 
       toast.success(res.data.message || "로그인 성공!");
     } catch (error) {

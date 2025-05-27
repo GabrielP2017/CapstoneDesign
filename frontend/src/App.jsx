@@ -38,12 +38,11 @@ import useBookmarkStore from "./store/useBookmarkStore";
 const App = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [currentPlaceName, setCurrentPlaceName] = useState("");
-  const { authUser, isCheckingAuth } = useAuthStore();
+  const { authUser, checkAuth, isCheckingAuth } = useAuthStore();
   const { readBookmarks } = useBookmarkStore();
   const { theme } = useThemeStore();
   const [isSettingsOpen, setSettingsOpen] = useState(false);
 
-  const checkAuth = useAuthStore(s => s.checkAuth);
 
   // ──────────────────────────────────────────────────────────────────────────────────
   // 2) useEffect: 마운트 시 한 번만 인증 상태 확인

@@ -31,36 +31,6 @@ export const useChatStore = create((set, get) => ({
   chatSessions: {},
   currentSessionId: null,
 
-  // 로그인 직후·새로고침 직후 호출
-  bootstrap: async () => {
-    // ① 세션 목록 가져오기
-    const { data } = await axiosInstance.get("/api/sessions");
-    set({ sessions: data });
-
-    // ② 가장 최근 세션 id 선정
-    const latest = data.length ? data[0].id : null;
-    const cached = localStorage.getItem("sessionId");
-    const sessionId = cached || latest;
-
-    // ③ 세션이 있으면 로그 불러오기
-    if (sessionId) {
-      try {
-        const res = await axiosInstance.get(
-          `/api/sessions/${sessionId}/logs`
-        );
-        set({
-          currentSessionId: sessionId,
-          messages: res.data,
-        });
-        localStorage.setItem("sessionId", sessionId);
-      } catch (e) {
-        console.error("bootstrap-load", e);
-        set({ currentSessionId: null, messages: [] });
-      }
-    }
-  },
-
-
   // ────────────────────────────────────────────────────────────────────
   //  새 채팅 시작하기
   // ────────────────────────────────────────────────────────────────────
