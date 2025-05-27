@@ -56,6 +56,17 @@ const ChatContainer = () => {
   const linkRef = useRef(null); // a#map-link
   const hasAnimated = useRef(false);
 
+  useEffect(()=>{
+    scrollToBottom();
+  },[messages]);
+
+  const scrollToBottom = () => {
+    if (scrollRef.current) {
+        scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  };
+
+
 
   // 로딩 중 스켈레톤
   if (isMessagesLoading) {
@@ -67,14 +78,7 @@ const ChatContainer = () => {
       </div>
     );
   }
-  const scrollToBottom = () => {
-    if (scrollRef.current) {
-        scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
-};
-  useEffect(()=>{
-    scrollToBottom();
-  },[messages]);
+
 
   // 메시지 렌더링
   return (
