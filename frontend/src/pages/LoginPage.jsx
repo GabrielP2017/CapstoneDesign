@@ -7,12 +7,12 @@
  *   3) 로그인 로딩 상태 표시
  *   4) AuthImagePattern으로 시각적 배경 패턴 렌더링
  * ----------------------------------------------------------------------------------- */
-import React, { useState } from 'react'
-import { useAuthStore } from '../store/useAuthStore';
-import { MessageSquare, Mail, Lock, Loader2, Eye, EyeOff } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { useAuthStore } from "../store/useAuthStore";
+import { Mail, Lock, Loader2, Eye, EyeOff } from "lucide-react";
+import { Link } from "react-router-dom";
 
-import AuthImagePattern from '../components/AuthImagePattern';
+import AuthImagePattern from "../components/AuthImagePattern";
 
 // ────────────────────────────────────────────────────────────────────────────────────
 // 1) 상태 정의 및 훅 가져오기
@@ -21,18 +21,18 @@ import AuthImagePattern from '../components/AuthImagePattern';
 //    - login (function), isLoggingIn (boolean): 인증 처리 및 로딩 플래그
 // ────────────────────────────────────────────────────────────────────────────────────
 const LoginPage = () => {
-	const [showPassword, setShowPassword] = useState(false);
-	const [formData, setFormData] = useState({
-		email: "",
-		password: "",
-	});
+  const [showPassword, setShowPassword] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
 
-	const { login, isLoggingIn } = useAuthStore();
+  const { login, isLoggingIn } = useAuthStore();
 
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-		login(formData);
-	};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    login(formData);
+  };
 
   // ──────────────────────────────────────────────────────────────────────────────────
   // 3) JSX 반환
@@ -40,8 +40,8 @@ const LoginPage = () => {
   //    - 왼쪽: 로그인 폼 (로고, 이메일/비밀번호 입력, 로그인 버튼, 회원가입 링크)
   //    - 오른쪽: AuthImagePattern 컴포넌트 렌더링
   // ──────────────────────────────────────────────────────────────────────────────────
-	return (
-		<div className="h-screen grid lg:grid-cols-2">
+  return (
+    <div className="h-screen grid lg:grid-cols-2">
       {/* 왼쪽 화면 */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
@@ -49,11 +49,7 @@ const LoginPage = () => {
           <div className="text-center mb-8">
             <div className="flex flex-col items-center gap-2 group">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <img
-                  src="/public/newlogo2.png"
-                  alt="description"
-                  className="w-9 h-9 object-contain"
-                />
+                <img src="/newlogo2.png" alt="description" className="w-9 h-9 object-contain" />
               </div>
               <h1 className="text-2xl font-bold mt-2">환영합니다</h1>
               <p className="text-base-content/60">로그인 정보를 입력하세요</p>
@@ -79,7 +75,7 @@ const LoginPage = () => {
                 />
               </div>
             </div>
-						{/* 패스워드 입력 */}
+            {/* 패스워드 입력 */}
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-sm font-medium">패스워드</span>
@@ -95,16 +91,8 @@ const LoginPage = () => {
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                 />
-                <button
-                  type="button"
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? (
-                    <EyeOff className="h-5 w-5 text-base-content/40" />
-                  ) : (
-                    <Eye className="h-5 w-5 text-base-content/40" />
-                  )}
+                <button type="button" className="absolute inset-y-0 right-0 pr-3 flex items-center" onClick={() => setShowPassword(!showPassword)}>
+                  {showPassword ? <EyeOff className="h-5 w-5 text-base-content/40" /> : <Eye className="h-5 w-5 text-base-content/40" />}
                 </button>
               </div>
             </div>
@@ -138,7 +126,7 @@ const LoginPage = () => {
         subtitle={"AI를 통한 상담을 이어가세요! 우리는 여러분의 고민을 덜어드리기 위해 최선을 다하고있습니다!"}
       />
     </div>
-	)
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;

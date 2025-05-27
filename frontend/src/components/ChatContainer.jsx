@@ -45,28 +45,26 @@ const ChatContainer = () => {
   const { bookmarks, addBookmark, deleteBookmark, readBookmarks } = useBookmarkStore();
 
   const [isModalOpen, setModalOpen] = useState(false);
-  const [currentPlaceName, setCurrentPlaceName] = useState("");  
+  const [currentPlaceName, setCurrentPlaceName] = useState("");
 
   // rawMessages가 undefined일 때를 방어
   const messages = Array.isArray(rawMessages) ? rawMessages : [];
 
-  const scrollRef=useRef(null);
+  const scrollRef = useRef(null);
 
   const mapRef = useRef(null); // div#map
   const linkRef = useRef(null); // a#map-link
   const hasAnimated = useRef(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     scrollToBottom();
-  },[messages]);
+  }, [messages]);
 
   const scrollToBottom = () => {
     if (scrollRef.current) {
-        scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
   };
-
-
 
   // 로딩 중 스켈레톤
   if (isMessagesLoading) {
@@ -78,7 +76,6 @@ const ChatContainer = () => {
       </div>
     );
   }
-
 
   // 메시지 렌더링
   return (
@@ -133,11 +130,7 @@ const ChatContainer = () => {
       </div>
 
       <MessageInput onSend={sendMessage} />
-      <MapModal
-        isOpen={isModalOpen}
-        onClose={() => setModalOpen(false)}
-        placeName={currentPlaceName}
-      />
+      <MapModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} placeName={currentPlaceName} />
     </motion.div>
   );
 };
