@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -149,3 +150,156 @@
     </script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Converso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .chat-container {
+        height: calc(100vh - 10vh);
+      }
+      #chatMessages a {
+        color: #3b82f6;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="w-full h-[10vh] text-center p-4">
+      <h1 class="text-2xl font-bold">Converso</h1>
+      <p class="text-sm text-gray-500 mt-1">Presented by Lee Dong Min</p>
+      <div class="h-1 w-10 bg-red-500 mx-auto mt-2"></div>
+    </header>
+
+    <div class="chat-container flex flex-col">
+      <div class="flex-1 p-4 overflow-y-auto" id="chatMessages"></div>
+
+      <div id="map" style="width: 100%; height: 300px" class="mt-4"></div>
+
+      <div class="p-4 bg-gray-200">
+        <div class="flex">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="기분을 입력하세요..."
+            class="flex-1 p-2 border border-gray-300 rounded-l-lg"
+            onkeydown="handleKey(event)"
+          />
+          <button onclick="sendChatMessage()" class="p-2 bg-blue-500 text-white rounded-r-lg">전송</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ google_api_key }}"></script>
+
+    <script>
+      let isSending = false;
+      let isComposing = false;
+
+      const input = document.getElementById("chatInput");
+
+      input.addEventListener("compositionstart", () => (isComposing = true));
+      input.addEventListener("compositionend", () => (isComposing = false));
+
+      function handleKey(event) {
+        if (event.key === "Enter" && !isComposing) {
+          event.preventDefault();
+          sendChatMessage();
+        }
+      }
+
+      function getCurrentTime() {
+        const now = new Date();
+        return now.toLocaleTimeString("ko-KR", { hour12: false });
+      }
+
+      function sendChatMessage() {
+        if (isSending) return;
+
+        const text = input.value;
+        if (!text.trim()) return;
+
+        isSending = true;
+        addChatMessage("user", text.trim());
+
+        input.value = "";
+        input.blur();
+        input.focus();
+
+        const formData = new FormData();
+        formData.append("message", text);
+
+        fetch("/get_response", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            addChatMessage("ai", data.response);
+            if (data.restaurant) {
+              showMap(data.restaurant);
+            }
+          })
+          .catch((err) => {
+            console.error(err);
+            addChatMessage("ai", "오류가 발생했습니다.");
+          })
+          .finally(() => {
+            isSending = false;
+          });
+      }
+
+      function addChatMessage(sender, text) {
+        const chatMessages = document.getElementById("chatMessages");
+
+        const messageWrapper = document.createElement("div");
+        messageWrapper.classList.add("mb-4", "flex", sender === "ai" ? "justify-start" : "justify-end");
+
+        const bubbleContainer = document.createElement("div");
+        bubbleContainer.classList.add("max-w-xs", "flex", "flex-col", sender === "ai" ? "items-start" : "items-end");
+
+        const bubbleDiv = document.createElement("div");
+        bubbleDiv.classList.add("p-2", "rounded-lg", "mb-1", sender === "ai" ? "bg-blue-100" : "bg-green-100");
+        bubbleDiv.innerText = text;
+
+        const timeDiv = document.createElement("div");
+        timeDiv.classList.add("text-xs", "text-gray-500");
+        timeDiv.textContent = getCurrentTime();
+
+        bubbleContainer.appendChild(bubbleDiv);
+        bubbleContainer.appendChild(timeDiv);
+        messageWrapper.appendChild(bubbleContainer);
+        chatMessages.appendChild(messageWrapper);
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      function showMap(restaurant) {
+        const mapDiv = document.getElementById("map");
+        const location = { lat: restaurant.lat, lng: restaurant.lng };
+
+        const map = new google.maps.Map(mapDiv, {
+          center: location,
+          zoom: 16,
+        });
+
+        new google.maps.Marker({
+          position: location,
+          map: map,
+          title: restaurant.name,
+        });
+      }
+    </script>
+  </body>
+</html>
+>>>>>>> 5383d10 (최신)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* -----------------------------------------------------------------------------------
  * 파일 이름    : useThemeStore.js
  * 설명         : Zustand 기반 테마 설정(Store) 관리 모듈 - 사용자 선택 테마 상태 관리
@@ -18,4 +19,26 @@ export const useThemeStore = create((set) => ({
 		localStorage.setItem("chat-theme", theme);
 		set({ theme });
 	},
+=======
+/* -----------------------------------------------------------------------------------
+ * 파일 이름    : useThemeStore.js
+ * 설명         : Zustand 기반 테마 설정(Store) 관리 모듈 - 사용자 선택 테마 상태 관리
+ * 주요 기능    :
+ *   1) theme 상태 초기화 (로컬 스토리지에서 복원, 기본값 "light")
+ *   2) setTheme 액션: 테마 변경 시 로컬 스토리지에 저장 및 상태 업데이트
+ * ----------------------------------------------------------------------------------- */
+import { create } from "zustand";
+
+// ────────────────────────────────────────────────────────────────────────────────────
+// 1) useThemeStore 정의
+//    - theme: 현재 적용된 테마 (로컬 스토리지 "chat-theme" 키에서 복원, 기본값 "coffee")
+//    - setTheme: 새로운 테마로 설정하고 로컬 스토리지에 반영
+// ────────────────────────────────────────────────────────────────────────────────────
+export const useThemeStore = create((set) => ({
+	theme: localStorage.getItem("chat-theme") || "light",
+	setTheme: (theme) => {
+		localStorage.setItem("chat-theme", theme);
+		set({ theme });
+	},
+>>>>>>> 5383d10 (최신)
 }));
