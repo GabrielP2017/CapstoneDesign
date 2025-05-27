@@ -25,9 +25,15 @@ from datetime import datetime
 # database_name = "AICHAT_database.db"
 # database_path = os.path.join(script_directory, database_name)
 
-database_path = os.getenv("DB_PATH", "/data/AICHAT_database.db")
-os.makedirs(os.path.dirname(database_path), exist_ok=True)
-connection = sqlite3.connect(database_path)
+# 1) 환경변수 또는 기본 파일명
+database_path = os.getenv("DB_PATH", "AICHAT_database.db")
+
+# 2) 절대경로로 바꾼 뒤 디렉터리 생성
+dir_path = os.path.dirname(os.path.abspath(database_path))
+os.makedirs(dir_path, exist_ok=True)
+
+# 3) 연결
+connection = sqlite3.connect(database_path, check_same_thread=False)
 cursor = connection.cursor()
 
 
