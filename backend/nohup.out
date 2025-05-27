@@ -1835,3 +1835,22 @@ INFO:     221.165.13.120:2618 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
 INFO:     221.165.13.120:2622 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
 INFO:     221.165.13.120:2622 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
 INFO:     221.165.13.120:2622 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     61.106.95.216:52997 - "GET /api/status HTTP/1.1" 401 Unauthorized
+INFO:     61.106.95.216:52996 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     61.106.95.216:53000 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53002 - "POST /api/signup HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53002 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53000 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53002 - "POST /api/sessions HTTP/1.1" 200 OK
+name: None
+name: 3대 삼계장인
+https://www.google.com/maps/place/?q=place_id:ChIJq7z77WyhfDURJm6zbi7bFkw
+aa
+INFO:     61.106.95.216:53003 - "POST /get_response HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53012 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53014 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53013 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53013 - "GET /api/sessions/bf946ffe-ac8b-48c3-b4e6-12132d453816/logs HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53021 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53022 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     61.106.95.216:53023 - "GET /api/sessions HTTP/1.1" 200 OK
