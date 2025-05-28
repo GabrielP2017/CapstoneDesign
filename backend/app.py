@@ -246,7 +246,7 @@ async def api_login(response: Response, data: dict):
         value=token,
         httponly=True,
         samesite="None", # 크로스 오리진 허용
-        secure=True
+        secure=False
     )
 
     return json_response
