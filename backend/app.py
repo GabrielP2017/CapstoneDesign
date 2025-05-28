@@ -47,6 +47,7 @@ from Ai.SearchContent import find_restaurant_nearby
 # 1) 환경 변수 & 상수
 # ────────────────────────────────────────────────
 load_dotenv()
+ENV = os.getenv("APP_ENV", "development")
 SECRET_KEY = os.getenv("SECRET_KEY", "capstone-secret")
 Maps_API_KEY = os.getenv("Maps_API_KEY")
 DATABASE = "AICHAT_database.db"
@@ -240,24 +241,42 @@ async def api_login(response: Response, data: dict):
     })
 
     print("json_response")
-    print(json_response)
+    # print(json_response)
+    # # json_response.set_cookie(
+    # #     key="token",
+    # #     value=token,
+    # #     httponly=True,
+    # #     samesite="None", # 크로스 오리진 허용
+    # #     secure=False
+    # # )
     # json_response.set_cookie(
     #     key="token",
     #     value=token,
     #     httponly=True,
-    #     samesite="None", # 크로스 오리진 허용
-    #     secure=False
-        
+    #     secure=False,
+    #     samesite="Lax", 
+    #     domain="43.203.44.237",
+    #     path= "/"
     # )
-    json_response.set_cookie(
-        key="token",
-        value=token,
-        httponly=True,
-        secure=False,
-        samesite="Lax", 
-        domain="43.203.44.237",
-        path= "/"
-    )
+    if ENV == "production":
+        json_response.set_cookie(
+            key="token",
+            value=token,
+            httponly=True,
+            secure=False,  # HTTPS 사용 시 True
+            samesite="Lax",
+            domain="43.203.44.237",  # 실제 도메인/IP
+            path="/"
+        )
+    else:
+        json_response.set_cookie(
+            key="token",
+            value=token,
+            httponly=True,
+            secure=False,
+            samesite="None"
+        )
+
 
     return json_response
 
