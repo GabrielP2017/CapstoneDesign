@@ -241,12 +241,22 @@ async def api_login(response: Response, data: dict):
 
     print("json_response")
     print(json_response)
+    # json_response.set_cookie(
+    #     key="token",
+    #     value=token,
+    #     httponly=True,
+    #     samesite="None", # 크로스 오리진 허용
+    #     secure=False
+        
+    # )
     json_response.set_cookie(
         key="token",
         value=token,
         httponly=True,
-        samesite="None", # 크로스 오리진 허용
-        secure=False
+        secure=False,
+        samesite="Lax", 
+        domain="43.203.44.237",
+        path= "/"
     )
 
     return json_response
