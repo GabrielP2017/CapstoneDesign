@@ -247,7 +247,7 @@ async def api_login(response: Response, data: dict):
     # #     value=token,
     # #     httponly=True,
     # #     samesite="None", # 크로스 오리진 허용
-    # #     secure=False
+    # #     secure=True
     # # )
     # json_response.set_cookie(
     #     key="token",
@@ -273,7 +273,7 @@ async def api_login(response: Response, data: dict):
             key="token",
             value=token,
             httponly=True,
-            secure=False,
+            secure=True,
             samesite="None"
         )
 
