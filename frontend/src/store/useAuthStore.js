@@ -94,7 +94,7 @@ export const useAuthStore = create((set) => ({
 
       readBookmarks();
       console.log("loginSuccess");
-
+      
       toast.success(res.data.message || "로그인 성공!");
     } catch (error) {
       console.log(error);
