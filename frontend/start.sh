@@ -1,2 +1,1 @@
-nohup npm run dev -- --host 0.0.0.0  > frontend.log 2>&1 &
-
+nohup npm run preview -- --host --port 5173 > preview.log 2>&1 &
