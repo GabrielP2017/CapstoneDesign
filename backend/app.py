@@ -263,9 +263,9 @@ async def api_login(response: Response, data: dict):
             key="token",
             value=token,
             httponly=True,
-            secure=False,  # HTTPS 사용 시 True
-            samesite="Lax",
-            domain="43.203.44.237",  # 실제 도메인/IP
+            secure=True,  # 반드시 True (HTTPS)
+            samesite="None",  # cross-site 허용
+            domain="mamat.kr",  # ❗ 도메인명 정확히 맞추기
             path="/"
         )
     else:
@@ -273,8 +273,8 @@ async def api_login(response: Response, data: dict):
             key="token",
             value=token,
             httponly=True,
-            secure=True,
-            samesite="None"
+            secure=False,
+            samesite="Lax"
         )
 
 
