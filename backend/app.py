@@ -102,7 +102,7 @@ templates = Jinja2Templates(directory="templates")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","http://43.203.44.237"],
+    allow_origins=["http://localhost:5173","http://43.203.44.237","https://mamat.kr"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
