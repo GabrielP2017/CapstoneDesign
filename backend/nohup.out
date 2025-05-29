@@ -2280,3 +2280,1559 @@ INFO:     112.150.248.103:59029 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108
 🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
 🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
 INFO:     112.150.248.103:59029 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:62451 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62453 - "GET /api/status HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62452 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62451 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62451 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62451 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:62496 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62498 - "GET /api/status HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62497 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/a5622f22-86ff-4163-b852-7f88e6425a83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:62496 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:62877 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:62878 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     112.150.248.103:62889 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+json_response
+INFO:     112.150.248.103:62890 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:62890 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/99740e09-3acf-41a8-a236-7d627aa40ea0/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/a5622f22-86ff-4163-b852-7f88e6425a83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/2c2bbb0f-f987-400d-9ce5-4cf45bc0e2a7/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/453dbe18-8958-4174-890b-a30cb9434028/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzY5NTN9.fiI9C6WUbY4zyJ56Msku0-0dVgNG6UL-7J3DMqErdCk
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748436953}
+INFO:     112.150.248.103:62890 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: None
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+🛠 verify_token returned email: None
+INFO:     112.150.248.103:64584 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:64585 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:64586 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     112.150.248.103:64598 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+json_response
+INFO:     112.150.248.103:64599 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:64599 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:64599 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:15042 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:15042 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:15042 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+INFO:     112.150.248.103:64624 - "OPTIONS /api/add_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+서울호떡 논현직영점
+https://www.google.com/maps/place/?q=place_id:ChIJJ_jXpICjfDURNXKk3zG8sXc
+INFO:     112.150.248.103:64625 - "POST /api/add_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:64625 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:64778 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:64776 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0Mzc3ODB9.dxBYKY806WFL_icfgHtXWK2ga0u23RqxErafz0klqPc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748437780}
+INFO:     112.150.248.103:64777 - "GET /api/status HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+INFO:     61.106.95.216:53592 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+🛠 verify_token returned email: None
+INFO:     61.106.95.216:53590 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+INFO:     61.106.95.216:53591 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     223.38.81.202:42716 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     223.38.81.202:42718 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     223.38.81.202:42736 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+json_response
+INFO:     223.38.81.202:42738 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+🛠 verify_token returned email: a@a.com
+INFO:     223.38.81.202:42738 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/99740e09-3acf-41a8-a236-7d627aa40ea0/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNDF9.JNycJoRvpbEJcKlY-q6vkuECFicnOhM9UPzg8mPEhIg
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438141}
+INFO:     223.38.81.202:42738 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+INFO:     112.150.248.103:9883 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+json_response
+INFO:     112.150.248.103:9884 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:9884 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:9884 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     223.38.81.202:42748 - "POST /api/logout HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/99740e09-3acf-41a8-a236-7d627aa40ea0/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/a5622f22-86ff-4163-b852-7f88e6425a83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54488 - "GET /api/sessions/56f98fb2-e123-4dae-98c7-4de7bede858a/logs HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+json_response
+INFO:     223.38.81.202:42752 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438169}
+INFO:     223.38.81.202:42752 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438169}
+🛠 verify_token returned email: a@a.com
+INFO:     223.38.81.202:42752 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438169}
+INFO:     223.38.81.202:42752 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438169}
+name: None
+name: 피자굼터
+https://www.google.com/maps/place/?q=place_id:ChIJda9pkIaxfDURPKohdvEOeZM
+aa
+INFO:     223.38.81.202:42752 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/dea4b50f-bc3a-4657-ab56-2c0eb2c34346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/99740e09-3acf-41a8-a236-7d627aa40ea0/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/a5622f22-86ff-4163-b852-7f88e6425a83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/56f98fb2-e123-4dae-98c7-4de7bede858a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/dea4b50f-bc3a-4657-ab56-2c0eb2c34346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/99740e09-3acf-41a8-a236-7d627aa40ea0/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/a5622f22-86ff-4163-b852-7f88e6425a83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/56f98fb2-e123-4dae-98c7-4de7bede858a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/dea4b50f-bc3a-4657-ab56-2c0eb2c34346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/2169ec9c-5e33-40d0-a7dd-ce2d0a04818e/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/c1f867b8-edca-4c76-baab-fdd4f7d612c1/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/7cc0efca-883b-4bdf-b6f7-172add6741e9/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/005fb385-d6eb-4868-be5c-14c921eefcec/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/615af001-6b5c-474c-bd0d-cba5b513ff46/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNTR9.p6IvX1wWjvfFb4FSMFBod1mcpH19Q6_Y_lVn4Iq9_Ng
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748438154}
+INFO:     112.150.248.103:54520 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     221.165.13.120:2832 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     221.165.13.120:2831 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     211.252.40.182:55804 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     211.252.40.182:55806 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     211.252.40.182:64689 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     211.252.40.182:64690 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     211.252.40.182:64706 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': '123456'}
+rowId
+19
+INFO:     211.252.40.182:64707 - "POST /api/login HTTP/1.1" 401 Unauthorized
+INFO:     211.252.40.182:64711 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     211.252.40.182:64712 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64712 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64712 - "POST /api/signup HTTP/1.1" 409 Conflict
+data
+{'email': '', 'password': ''}
+INFO:     211.252.40.182:64712 - "POST /api/login HTTP/1.1" 400 Bad Request
+data
+{'email': '', 'password': ''}
+INFO:     211.252.40.182:64712 - "POST /api/login HTTP/1.1" 400 Bad Request
+INFO:     211.252.40.182:64715 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64715 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64715 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64726 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64736 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64736 - "POST /api/signup HTTP/1.1" 409 Conflict
+INFO:     211.252.40.182:64740 - "POST /api/signup HTTP/1.1" 409 Conflict
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:60550 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:17789 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     112.150.248.103:17660 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': '', 'password': ''}
+INFO:     112.150.248.103:17789 - "POST /api/login HTTP/1.1" 400 Bad Request
+INFO:     20.163.15.43:37368 - "GET /v2/ HTTP/1.1" 404 Not Found
+INFO:     65.49.1.31:17441 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.30:57407 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.66.73.147:54452 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.66.73.147:54453 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     220.66.73.147:54465 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+json_response
+INFO:     220.66.73.147:54466 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+INFO:     220.66.73.147:54466 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+🛠 verify_token returned email: a@a.com
+INFO:     220.66.73.147:54466 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+INFO:     220.66.73.147:54466 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+INFO:     220.66.73.147:54466 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+INFO:     220.66.73.147:54466 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+INFO:     220.66.73.147:54466 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0OTY1NTV9.-6kPLddF1dt0mAH7B6-8aALipf3m2pUtttmWC7hxaXw
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748496555}
+INFO:     220.66.73.147:54466 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.197.20:15212 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.197.20:41534 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.197.20:23694 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.197.20:19356 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     39.7.230.36:45954 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     39.7.230.36:46268 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     106.101.197.20:33010 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'bbb12345@naver.com', 'password': 'bbb12345'}
+rowId
+9
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+json_response
+INFO:     106.101.197.20:10052 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+🛠 verify_token returned email: bbb12345@naver.com
+INFO:     106.101.197.20:10052 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/2e53165d-3c7f-4336-93aa-2e67e4e222aa/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/2e53165d-3c7f-4336-93aa-2e67e4e222aa/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/7780e179-1613-4cdd-b539-66b3edfd73fe/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/61d85c05-1703-4cf1-a5cf-0f1b59fc41a3/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/2e53165d-3c7f-4336-93aa-2e67e4e222aa/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/7780e179-1613-4cdd-b539-66b3edfd73fe/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjU0MH0.ZoRNI_J9SFfK6wVFcCDEROeCAI8P4WvC9rcavCotGiM
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516540}
+INFO:     106.101.197.20:10052 - "GET /api/sessions/2e53165d-3c7f-4336-93aa-2e67e4e222aa/logs HTTP/1.1" 200 OK
+INFO:     39.7.230.36:46292 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'jimmy@test2.com', 'password': '010617'}
+rowId
+INFO:     39.7.230.36:46294 - "POST /api/login HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/app.py", line 230, in api_login
+    print(row["id"])
+TypeError: 'NoneType' object is not subscriptable
+data
+{'email': 'jimmy@test.com', 'password': '010617'}
+rowId
+INFO:     39.7.230.36:36006 - "POST /api/login HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/app.py", line 230, in api_login
+    print(row["id"])
+TypeError: 'NoneType' object is not subscriptable
+data
+{'email': 'jimmy@test5.com', 'password': '010617'}
+rowId
+INFO:     39.7.230.36:6134 - "POST /api/login HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/app.py", line 230, in api_login
+    print(row["id"])
+TypeError: 'NoneType' object is not subscriptable
+INFO:     39.7.230.36:46328 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     39.7.230.36:61035 - "POST /api/signup HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbW15QHRlc3QuY29tIiwiZXhwIjoxNzQ4NTE2NTg4fQ.DzBkfbcDcme2mMXhzEMaPprV5OoYnjmZi7NWmHt_jSA
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImppbW15QHRlc3QuY29tIiwiZXhwIjoxNzQ4NTE2NTg4fQ.DzBkfbcDcme2mMXhzEMaPprV5OoYnjmZi7NWmHt_jSA
+🐛 → decoded payload: {'email': 'jimmy@test.com', 'exp': 1748516588}
+🛠 verify_token returned email: jimmy@test.com
+INFO:     39.7.230.36:61035 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:59722 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:33120 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     39.7.230.36:46368 - "POST /api/logout HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:51686 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🛠 current_user_id_or_401() token: None
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+🛠 verify_token returned email: None
+INFO:     106.101.203.22:33070 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:5558 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:33070 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:5558 - "GET /api/status HTTP/1.1" 401 Unauthorized
+INFO:     106.101.203.22:1858 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'bbb12345@naver.com', 'password': 'bbb12345'}
+rowId
+9
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjY0N30.B614rohQW9nP3Ul06EBNh4yTzjgAM4U4awC0FPPNtUg
+json_response
+INFO:     106.101.203.22:55130 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjY0N30.B614rohQW9nP3Ul06EBNh4yTzjgAM4U4awC0FPPNtUg
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516647}
+INFO:     106.101.203.22:55130 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjY0N30.B614rohQW9nP3Ul06EBNh4yTzjgAM4U4awC0FPPNtUg
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUxNjY0N30.B614rohQW9nP3Ul06EBNh4yTzjgAM4U4awC0FPPNtUg
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748516647}
+🛠 verify_token returned email: bbb12345@naver.com
+INFO:     106.101.203.22:55130 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     106.101.203.22:59542 - "POST /api/logout HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:59542 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.203.22:36872 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     118.235.14.56:41822 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     118.235.14.56:41812 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     118.235.14.56:35554 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     118.235.14.56:35564 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     159.65.255.161:37656 - "GET / HTTP/1.1" 200 OK
+INFO:     159.65.255.161:37670 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:50465 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:50466 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.70.56:60696 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.70.56:23446 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.70.56:44648 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.70.56:44634 - "GET /api/status HTTP/1.1" 401 Unauthorized
+INFO:     106.101.70.56:44652 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': '', 'password': ''}
+INFO:     106.101.70.56:44634 - "POST /api/login HTTP/1.1" 400 Bad Request
+INFO:     106.101.70.56:60120 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     106.101.70.56:60134 - "POST /api/signup HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbW11YW5nMTM1QGdtYWlsLmNvbSIsImV4cCI6MTc0ODUyMzUxMH0.X6SU_cS7OxMUzXgIjKyxOoBQ3pZCXsiXmDY8zQRaxxQ
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbW11YW5nMTM1QGdtYWlsLmNvbSIsImV4cCI6MTc0ODUyMzUxMH0.X6SU_cS7OxMUzXgIjKyxOoBQ3pZCXsiXmDY8zQRaxxQ
+🐛 → decoded payload: {'email': 'kimmuang135@gmail.com', 'exp': 1748523510}
+🛠 verify_token returned email: kimmuang135@gmail.com
+INFO:     106.101.70.56:60134 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.67.218:59842 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.67.218:59844 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.67.218:14790 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     106.101.67.218:33068 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     106.101.67.218:44084 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     106.101.67.218:14620 - "POST /api/signup HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjM3NDB9.SaSxfV0XS9p_4Tu6B4mijAEYn6w3mjppa9zsFR-xvvY
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjM3NDB9.SaSxfV0XS9p_4Tu6B4mijAEYn6w3mjppa9zsFR-xvvY
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748523740}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     106.101.67.218:14620 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.231.65.156:49845 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.231.65.156:49846 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     182.231.65.156:49857 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'kim@gmail.com', 'password': '123456'}
+rowId
+41
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+json_response
+INFO:     182.231.65.156:49858 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+INFO:     182.231.65.156:49858 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49858 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49864 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49865 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49865 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49865 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49865 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49866 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49866 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49866 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49866 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 능이버섯백숙
+https://www.google.com/maps/place/?q=place_id:ChIJO2gyuIqefDURYocp64oQ2aI
+aa
+INFO:     182.231.65.156:49866 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 기와집순두부 서초점
+https://www.google.com/maps/place/?q=place_id:ChIJI8eH12ihfDURhVQV32lmzFc
+aa
+INFO:     182.231.65.156:49881 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 따시단호박죽
+https://www.google.com/maps/place/?q=place_id:ChIJ59rHiK27fDURB787aW26O4I
+aa
+INFO:     182.231.65.156:49882 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 상주아람곶감 영농조합법인
+https://www.google.com/maps/place/?q=place_id:ChIJy68MY15NZDURpnFCoWhCQok
+aa
+INFO:     182.231.65.156:49889 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: None
+INFO:     182.231.65.156:49890 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 따시단호박죽
+https://www.google.com/maps/place/?q=place_id:ChIJ59rHiK27fDURB787aW26O4I
+aa
+INFO:     182.231.65.156:49890 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 수빈떡갈비
+https://www.google.com/maps/place/?q=place_id:ChIJqatJ64qYfDURDrC8-Qu50HQ
+aa
+INFO:     182.231.65.156:49892 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+name: None
+name: 청국장밥
+https://www.google.com/maps/place/?q=place_id:ChIJI0nJJMSifDURAvcbRnriQPY
+aa
+INFO:     182.231.65.156:49893 - "POST /get_response HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49894 - "OPTIONS /api/add_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+수빈떡갈비
+https://www.google.com/maps/place/?q=place_id:ChIJqatJ64qYfDURDrC8-Qu50HQ
+INFO:     182.231.65.156:49895 - "POST /api/add_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+INFO:     182.231.65.156:49895 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49896 - "OPTIONS /api/delete_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+66
+INFO:     182.231.65.156:49897 - "POST /api/delete_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjQ1OTB9.4KRAIJSrlxMqTsoSzDjkA4jGarpURzP2CaFQB4YcgEI
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748524590}
+INFO:     182.231.65.156:49897 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49905 - "POST /api/logout HTTP/1.1" 200 OK
+data
+{'email': 'kim@gmail.com', 'password': '123456'}
+rowId
+41
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+json_response
+INFO:     182.231.65.156:49907 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49907 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49907 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49907 - "GET /api/sessions/5bc2331e-d86f-4e84-9909-c72174e1c1c2/logs HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49927 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49928 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49928 - "GET /api/sessions/5bc2331e-d86f-4e84-9909-c72174e1c1c2/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49928 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49928 - "GET /api/sessions/5bc2331e-d86f-4e84-9909-c72174e1c1c2/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49930 - "GET /api/sessions/5bc2331e-d86f-4e84-9909-c72174e1c1c2/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49930 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49931 - "OPTIONS /api/sessions/5bc2331e-d86f-4e84-9909-c72174e1c1c2 HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49930 - "DELETE /api/sessions/5bc2331e-d86f-4e84-9909-c72174e1c1c2 HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjUwNTF9.h2PuLYCg-zZsCS6E__CFokRX3jWsd1A7dnu7HlZvUWE
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525051}
+INFO:     182.231.65.156:49934 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49935 - "POST /api/logout HTTP/1.1" 200 OK
+INFO:     123.178.210.104:56466 - "GET / HTTP/1.1" 200 OK
+INFO:     1.83.125.33:38372 - "GET / HTTP/1.1" 200 OK
+INFO:     120.0.52.158:29140 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     182.231.65.156:49956 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'kim@gmail.com', 'password': '123456'}
+rowId
+41
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+json_response
+INFO:     182.231.65.156:49957 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49957 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49957 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49959 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: None
+INFO:     182.231.65.156:49960 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: None
+INFO:     182.231.65.156:49960 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: 수빈떡갈비
+https://www.google.com/maps/place/?q=place_id:ChIJqatJ64qYfDURDrC8-Qu50HQ
+aa
+INFO:     182.231.65.156:49960 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: 정담은보쌈 본점(신림점)
+https://www.google.com/maps/place/?q=place_id:ChIJWX6IgJaffDURpwHX788tTrI
+aa
+INFO:     182.231.65.156:49960 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:52654 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:52652 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: 바다앞라면집
+https://www.google.com/maps/place/?q=place_id:ChIJp-GiJ6ODezURA3ANKe2vPGw
+aa
+INFO:     182.231.65.156:49971 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.120.56.6:2438 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.120.56.6:2438 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     182.231.65.156:49976 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49977 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49977 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49977 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49978 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49978 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49978 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: None
+INFO:     182.231.65.156:49978 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49979 - "GET /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49979 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49979 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49980 - "GET /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49980 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49980 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49980 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → token expired
+INFO:     223.38.73.236:50426 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → token expired
+INFO:     223.38.73.236:50424 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzgxNjl9.QMScflgtzoljHgL8tNj3Uu1uJBBbx5mksv6c8NRiOjs
+🐛 → token expired
+🛠 verify_token returned email: None
+INFO:     223.38.73.236:50424 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: 따시단호박죽
+https://www.google.com/maps/place/?q=place_id:ChIJ59rHiK27fDURB787aW26O4I
+aa
+INFO:     182.231.65.156:49981 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6/logs HTTP/1.1" 200 OK
+INFO:     223.38.73.236:50432 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+json_response
+INFO:     223.38.73.236:50434 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.236:50434 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+🛠 verify_token returned email: a@a.com
+INFO:     223.38.73.236:50434 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:49981 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.236:50434 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.236:50434 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.236:50434 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+🛠 verify_token returned email: a@a.com
+INFO:     223.38.73.236:50434 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49994 - "OPTIONS /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6 HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49995 - "DELETE /api/sessions/e21239d1-6360-4bc8-93f0-d32e98f6d2e6 HTTP/1.1" 200 OK
+INFO:     182.231.65.156:49994 - "OPTIONS /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:49995 - "DELETE /api/sessions/411b1100-16d4-4a08-8835-c2f116c61e4c HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:50000 - "POST /api/sessions HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:50000 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/5b92eb1f-6f5e-42d5-88ee-5cce50ad5d15/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/2d278345-9f9c-41a2-a7ed-8bce2fb578a7/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/5b92eb1f-6f5e-42d5-88ee-5cce50ad5d15/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/2d278345-9f9c-41a2-a7ed-8bce2fb578a7/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+name: None
+name: 따시단호박죽
+https://www.google.com/maps/place/?q=place_id:ChIJ59rHiK27fDURB787aW26O4I
+aa
+INFO:     182.231.65.156:50000 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/5b92eb1f-6f5e-42d5-88ee-5cce50ad5d15/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/2d278345-9f9c-41a2-a7ed-8bce2fb578a7/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/5b92eb1f-6f5e-42d5-88ee-5cce50ad5d15/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50000 - "GET /api/sessions/2d278345-9f9c-41a2-a7ed-8bce2fb578a7/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.120.56.6:2694 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.120.56.6:2695 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.120.56.6:2725 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     220.120.56.6:2724 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:44964 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:44966 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     182.222.138.50:44970 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'bbb12345@naver.com', 'password': 'bbb12345'}
+rowId
+9
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+json_response
+INFO:     182.222.138.50:44972 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748526481}
+INFO:     182.222.138.50:44972 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748526481}
+🛠 verify_token returned email: bbb12345@naver.com
+INFO:     182.222.138.50:44972 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748526481}
+INFO:     182.222.138.50:44972 - "GET /api/sessions/7780e179-1613-4cdd-b539-66b3edfd73fe/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748526481}
+INFO:     182.222.138.50:44972 - "GET /api/sessions/2e53165d-3c7f-4336-93aa-2e67e4e222aa/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJiYjEyMzQ1QG5hdmVyLmNvbSIsImV4cCI6MTc0ODUyNjQ4MX0.hECJZlutD1Wwfo8A4CEQYgeYb2p-R_uo7pwWyAtGfEI
+🐛 → decoded payload: {'email': 'bbb12345@naver.com', 'exp': 1748526481}
+INFO:     182.222.138.50:44972 - "GET /api/sessions/61d85c05-1703-4cf1-a5cf-0f1b59fc41a3/logs HTTP/1.1" 200 OK
+INFO:     220.120.56.6:2794 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     220.120.56.6:2795 - "POST /api/signup HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+🛠 verify_token returned email: sinplannet@gmail.com
+INFO:     220.120.56.6:2795 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     220.120.56.6:2794 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+🛠 verify_token returned email: sinplannet@gmail.com
+INFO:     220.120.56.6:2795 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:2803 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 함평 홍어 삼합 보쌈
+https://www.google.com/maps/place/?q=place_id:ChIJx7zVlEykfDURcXyltLZpMyU
+aa
+INFO:     220.120.56.6:2809 - "POST /get_response HTTP/1.1" 200 OK
+INFO:     182.231.65.156:50028 - "OPTIONS /api/sessions/5b92eb1f-6f5e-42d5-88ee-5cce50ad5d15 HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:50029 - "DELETE /api/sessions/5b92eb1f-6f5e-42d5-88ee-5cce50ad5d15 HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:2816 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:2821 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 달래해장 강남역플래티넘점
+https://www.google.com/maps/place/?q=place_id:ChIJN5oLduShfDURnqo4Bp2yLmE
+aa
+INFO:     220.120.56.6:2889 - "POST /get_response HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+🛠 verify_token returned email: sinplannet@gmail.com
+INFO:     220.120.56.6:2911 - "POST /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 베이글리스트
+https://www.google.com/maps/place/?q=place_id:ChIJZajK4badfDURHMHNrHgfzPw
+aa
+INFO:     220.120.56.6:2912 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 곱창전골
+https://www.google.com/maps/place/?q=place_id:ChIJJbS0scGYfDUR8zEpnPpGWQQ
+aa
+INFO:     220.120.56.6:2927 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:2927 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 솜솜베이커리
+https://www.google.com/maps/place/?q=place_id:ChIJU0v0pB2xfDURVPbNmHQ8q3M
+aa
+INFO:     220.120.56.6:2934 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50068 - "GET /api/sessions/ca0fa9b0-f7ac-4ab2-bebe-9043a5319f19/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjU2Mjd9.bXbwxR71A_zfVVBKIkN9KhW6azhLjgM96-8E56M-u5c
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748525627}
+INFO:     182.231.65.156:50068 - "GET /api/sessions/2d278345-9f9c-41a2-a7ed-8bce2fb578a7/logs HTTP/1.1" 200 OK
+INFO:     182.231.65.156:50068 - "POST /api/logout HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:2954 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:2959 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 지니전복죽 ジニアワビ粥
+https://www.google.com/maps/place/?q=place_id:ChIJgwTJCvCjfDURGqgYtQZh9hI
+aa
+INFO:     220.120.56.6:2958 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: 장수삼계탕
+https://www.google.com/maps/place/?q=place_id:ChIJ571iet2ifDURwnh3L9bM_Jw
+aa
+INFO:     220.120.56.6:2977 - "POST /get_response HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI2NTM2fQ.5yB_FtBUxspPtp5Y8qGXIOXhVvXsZjTgiROUh1mwPWc
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748526536}
+name: None
+name: None
+INFO:     220.120.56.6:3028 - "POST /get_response HTTP/1.1" 200 OK
+INFO:     182.231.65.156:50075 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'kim@gmail.com', 'password': '123456'}
+rowId
+41
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcxMDd9.9utbX_5AG8BM782auVOjGnuQtUZiGRFzUUgJ7X06rO0
+json_response
+INFO:     182.231.65.156:50076 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcxMDd9.9utbX_5AG8BM782auVOjGnuQtUZiGRFzUUgJ7X06rO0
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748527107}
+INFO:     182.231.65.156:50076 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcxMDd9.9utbX_5AG8BM782auVOjGnuQtUZiGRFzUUgJ7X06rO0
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcxMDd9.9utbX_5AG8BM782auVOjGnuQtUZiGRFzUUgJ7X06rO0
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748527107}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:50076 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     182.231.65.156:50079 - "POST /api/logout HTTP/1.1" 200 OK
+data
+{'email': 'kim@gmail.com', 'password': '123456'}
+rowId
+41
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcyMzV9.o2Yz7KzprvYYY2zonO6E2e_ufRbfqqzrwwqV0ednmjc
+json_response
+INFO:     182.231.65.156:50081 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcyMzV9.o2Yz7KzprvYYY2zonO6E2e_ufRbfqqzrwwqV0ednmjc
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748527235}
+INFO:     182.231.65.156:50081 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcyMzV9.o2Yz7KzprvYYY2zonO6E2e_ufRbfqqzrwwqV0ednmjc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbUBnbWFpbC5jb20iLCJleHAiOjE3NDg1MjcyMzV9.o2Yz7KzprvYYY2zonO6E2e_ufRbfqqzrwwqV0ednmjc
+🐛 → decoded payload: {'email': 'kim@gmail.com', 'exp': 1748527235}
+🛠 verify_token returned email: kim@gmail.com
+INFO:     182.231.65.156:50081 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.7:50754 - "GET /api/status HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.7:50756 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+🛠 verify_token returned email: a@a.com
+INFO:     223.38.73.7:50756 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.7:50756 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.7:50756 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+INFO:     223.38.73.7:50756 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg1MjYyNTJ9.WKfV8n0g2zfO1Fw3ctyTUaRLl62aBliAXxRBeUSAzqY
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748526252}
+🛠 verify_token returned email: a@a.com
+INFO:     223.38.73.7:50756 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     220.120.56.6:3682 - "POST /api/logout HTTP/1.1" 200 OK
+INFO:     220.120.56.6:3751 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'sinplannet@gmail.com', 'password': 'Je1190107@'}
+rowId
+42
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI4MTgwfQ.Pqwynyc7GknqGo6LWT677UWfBYwuzFD9ulhEiCSxx5Q
+json_response
+INFO:     220.120.56.6:3752 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI4MTgwfQ.Pqwynyc7GknqGo6LWT677UWfBYwuzFD9ulhEiCSxx5Q
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748528180}
+INFO:     220.120.56.6:3752 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI4MTgwfQ.Pqwynyc7GknqGo6LWT677UWfBYwuzFD9ulhEiCSxx5Q
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpbnBsYW5uZXRAZ21haWwuY29tIiwiZXhwIjoxNzQ4NTI4MTgwfQ.Pqwynyc7GknqGo6LWT677UWfBYwuzFD9ulhEiCSxx5Q
+🐛 → decoded payload: {'email': 'sinplannet@gmail.com', 'exp': 1748528180}
+🛠 verify_token returned email: sinplannet@gmail.com
+INFO:     220.120.56.6:3752 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     220.120.56.6:3758 - "POST /api/logout HTTP/1.1" 200 OK
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:50087 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     182.222.138.50:50088 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🛠 current_user_id_or_401() token: None
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+🛠 verify_token returned email: None
+INFO:     182.222.138.50:50087 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     18.220.154.78:48560 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+INFO:     61.106.95.216:55102 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+INFO:     61.106.95.216:55101 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+INFO:     61.106.95.216:55102 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4MzUwODc5fQ.lN9w8pUJF15MaaKk4PQLhJzoGxbqrMl52gj4oz20Q9U
+🐛 → token expired
+INFO:     61.106.95.216:55101 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     128.1.131.221:4320 - "GET / HTTP/1.1" 200 OK
+INFO:     61.106.95.216:55120 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'Test@email.com', 'password': 'ldm2001'}
+rowId
+36
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4NTMwMjgxfQ.MbjWKY8bzyUOriBIwsL2n5jpQhVGL75DzHxXX8jQnp4
+json_response
+INFO:     61.106.95.216:55104 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4NTMwMjgxfQ.MbjWKY8bzyUOriBIwsL2n5jpQhVGL75DzHxXX8jQnp4
+🐛 → decoded payload: {'email': 'Test@email.com', 'exp': 1748530281}
+INFO:     61.106.95.216:55104 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4NTMwMjgxfQ.MbjWKY8bzyUOriBIwsL2n5jpQhVGL75DzHxXX8jQnp4
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4NTMwMjgxfQ.MbjWKY8bzyUOriBIwsL2n5jpQhVGL75DzHxXX8jQnp4
+🐛 → decoded payload: {'email': 'Test@email.com', 'exp': 1748530281}
+🛠 verify_token returned email: Test@email.com
+INFO:     61.106.95.216:55104 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlRlc3RAZW1haWwuY29tIiwiZXhwIjoxNzQ4NTMwMjgxfQ.MbjWKY8bzyUOriBIwsL2n5jpQhVGL75DzHxXX8jQnp4
+🐛 → decoded payload: {'email': 'Test@email.com', 'exp': 1748530281}
+INFO:     61.106.95.216:55104 - "GET /api/sessions/bf946ffe-ac8b-48c3-b4e6-12132d453816/logs HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: None
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+🛠 verify_token returned email: None
+INFO:     112.150.248.103:28045 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:63068 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     112.150.248.103:63067 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     154.212.141.235:46654 - "GET / HTTP/1.1" 200 OK
+INFO:     154.212.141.235:46682 - "GET /favicon.ico HTTP/1.1" 404 Not Found
