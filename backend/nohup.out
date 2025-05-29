@@ -1854,3 +1854,429 @@ INFO:     61.106.95.216:53013 - "GET /api/sessions/bf946ffe-ac8b-48c3-b4e6-12132
 INFO:     61.106.95.216:53021 - "GET /api/status HTTP/1.1" 200 OK
 INFO:     61.106.95.216:53022 - "GET /api/bookmarks HTTP/1.1" 200 OK
 INFO:     61.106.95.216:53023 - "GET /api/sessions HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/home/ubuntu/mind/CapstoneDesign/backend/app.py", line 61, in <module>
+    from users import (
+  File "/home/ubuntu/mind/CapstoneDesign/backend/users.py", line 29, in <module>
+    os.makedirs(os.path.dirname(database_path), exist_ok=True)
+  File "/usr/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/data'
+INFO:     Started server process [18670]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18670]
+INFO:     Started server process [59488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+🚀 FastAPI running with CORS on http://localhost:5000
+🚀 FastAPI running with CORS on http://localhost:5000
+INFO:     117.17.34.45:50601 - "GET / HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50601 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     117.17.34.45:50615 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:50617 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:50616 - "GET /api/status HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:50618 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50619 - "POST /api/signup HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50619 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50618 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50619 - "POST /api/sessions HTTP/1.1" 200 OK
+name: None
+name: 새봄떡국
+https://www.google.com/maps/place/?q=place_id:ChIJqesj9I6ifDURL1D27Dh2Lcs
+aa
+INFO:     117.17.34.45:50619 - "POST /get_response HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50721 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50722 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50723 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50723 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50722 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50721 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50721 - "POST /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50824 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50823 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50825 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50825 - "GET /api/sessions/79aea0dc-ee68-4b41-bf7b-2d31ce59c8b7/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50825 - "GET /api/sessions/4dc7d6c4-4175-4fa4-b14c-1d85b0a7d29b/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50825 - "GET /api/sessions/79aea0dc-ee68-4b41-bf7b-2d31ce59c8b7/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50924 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50923 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50925 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50925 - "GET /api/sessions/79aea0dc-ee68-4b41-bf7b-2d31ce59c8b7/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50925 - "GET /api/sessions/4dc7d6c4-4175-4fa4-b14c-1d85b0a7d29b/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:50925 - "GET /api/sessions/79aea0dc-ee68-4b41-bf7b-2d31ce59c8b7/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:51396 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     117.17.34.45:51394 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:51395 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52089 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52087 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52088 - "GET /api/status HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52088 - "POST /api/logout HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52092 - "OPTIONS /api/login HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52088 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52088 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52088 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52092 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52088 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52106 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52106 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52106 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52449 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52450 - "GET /api/status HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52451 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52455 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52455 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52455 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52463 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52469 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52469 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52469 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52469 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52469 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52469 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52779 - "POST /api/logout HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52789 - "OPTIONS /api/signup HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52790 - "POST /api/signup HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52790 - "GET /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52790 - "POST /api/logout HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52795 - "OPTIONS /api/login HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52790 - "POST /api/login HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52790 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52797 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52795 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+INFO:     117.17.34.45:52797 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52797 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:52797 - "POST /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     65.49.1.106:43239 - "GET / HTTP/1.1" 200 OK
+INFO:     65.49.1.104:59345 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [59488]
+🔑 Loaded SECRET_KEY = capstone-secret
+🚀 FastAPI running with CORS on http://localhost:5000
+🔑 Loaded SECRET_KEY = capstone-secret
+INFO:     Started server process [126510]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [126510]
+🔑 Loaded SECRET_KEY = capstone-secret
+🚀 FastAPI running with CORS on http://localhost:5000
+🔑 Loaded SECRET_KEY = capstone-secret
+INFO:     Started server process [136595]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+🚀 FastAPI running with CORS on http://localhost:5000
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     117.17.34.45:57632 - "GET /api/status HTTP/1.1" 401 Unauthorized
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+INFO:     117.17.34.45:57631 - "GET /api/bookmarks HTTP/1.1" 401 Unauthorized
+🛠 current_user_id_or_401() token: None
+🐛 verify_token() got token: None
+🐛 → no token, returning None
+🛠 verify_token returned email: None
+INFO:     117.17.34.45:57630 - "GET /api/sessions HTTP/1.1" 401 Unauthorized
+INFO:     117.17.34.45:57637 - "OPTIONS /api/login HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+json_response
+<starlette.responses.JSONResponse object at 0x708c2f1dc130>
+INFO:     117.17.34.45:57638 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+🛠 verify_token returned email: a@a.com
+INFO:     117.17.34.45:57638 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/99740e09-3acf-41a8-a236-7d627aa40ea0/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/fd2d067e-52a6-47e3-b6e9-e60ae0da475a/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57638 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+INFO:     117.17.34.45:57678 - "OPTIONS /api/add_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+서울호떡 논현직영점
+https://www.google.com/maps/place/?q=place_id:ChIJJ_jXpICjfDURNXKk3zG8sXc
+INFO:     117.17.34.45:57644 - "POST /api/add_bookmark HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg1OTl9.Wqfhtc5cV2Yr_KkGjWFvUsmmqSdD_1C-_uxetBW3Xi8
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418599}
+INFO:     117.17.34.45:57644 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     117.17.34.45:57700 - "POST /api/logout HTTP/1.1" 200 OK
+data
+{'email': 'bbb12345@naver.com', 'password': 'bbb123345'}
+rowId
+9
+INFO:     117.17.34.45:57719 - "POST /api/login HTTP/1.1" 401 Unauthorized
+data
+{'email': 'bb12345@naver.com', 'password': 'bb12345'}
+rowId
+INFO:     117.17.34.45:57728 - "POST /api/login HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/app.py", line 229, in api_login
+    print(row["id"])
+TypeError: 'NoneType' object is not subscriptable
+data
+{'email': 'bb12345@naver.com', 'password': 'bb12345'}
+rowId
+INFO:     117.17.34.45:57744 - "POST /api/login HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/mind/CapstoneDesign/backend/venv/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/mind/CapstoneDesign/backend/app.py", line 229, in api_login
+    print(row["id"])
+TypeError: 'NoneType' object is not subscriptable
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+json_response
+<starlette.responses.JSONResponse object at 0x708c2f18c160>
+INFO:     117.17.34.45:57766 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57766 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+🛠 verify_token returned email: a@a.com
+INFO:     117.17.34.45:57766 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/53814cc6-2ea2-4460-a266-12dd7a830d3b/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/a5622f22-86ff-4163-b852-7f88e6425a83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/dea4b50f-bc3a-4657-ab56-2c0eb2c34346/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/1e4273b2-f879-4e22-8bed-6b1eb49ef4f9/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/905f7a80-af0c-4f33-baf1-1fbc0b516760/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/a444edad-d591-47ca-a423-5df2a1da97c6/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/1e4273b2-f879-4e22-8bed-6b1eb49ef4f9/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57777 - "GET /api/sessions/615af001-6b5c-474c-bd0d-cba5b513ff46/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57799 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MTg2NzV9.3ndgwVUISpXxcQT0ylBk8nZwqanNbbGHBDyIohOqKi4
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748418675}
+INFO:     117.17.34.45:57799 - "GET /api/sessions/eb12ce65-f38b-46b0-801c-eb114f38de40/logs HTTP/1.1" 200 OK
+INFO:     3.137.73.221:57320 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     3.137.73.221:48418 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [136595]
+🔑 Loaded SECRET_KEY = capstone-secret
+🚀 FastAPI running with CORS on http://localhost:5000
+🔑 Loaded SECRET_KEY = capstone-secret
+INFO:     Started server process [146874]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+🚀 FastAPI running with CORS on http://localhost:5000
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzQ5MTR9.PmEWH6EaQV0yAaQVUb4SGdczhItaxMkN46RHLWDNFkc
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzQ5MTR9.PmEWH6EaQV0yAaQVUb4SGdczhItaxMkN46RHLWDNFkc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748434914}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:58914 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzQ5MTR9.PmEWH6EaQV0yAaQVUb4SGdczhItaxMkN46RHLWDNFkc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748434914}
+INFO:     112.150.248.103:58915 - "GET /api/status HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzQ5MTR9.PmEWH6EaQV0yAaQVUb4SGdczhItaxMkN46RHLWDNFkc
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748434914}
+INFO:     112.150.248.103:14732 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     112.150.248.103:14732 - "POST /api/logout HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+json_response
+INFO:     112.150.248.103:14732 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435175}
+INFO:     112.150.248.103:14732 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435175}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:58920 - "GET /api/sessions HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435175}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:59019 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435175}
+INFO:     112.150.248.103:59020 - "GET /api/status HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUxNzV9.eFjMw8RAsQAyWRmpJcswuKvhpp682LouMyCK0KQYmbA
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435175}
+INFO:     112.150.248.103:59021 - "GET /api/bookmarks HTTP/1.1" 200 OK
+INFO:     112.150.248.103:59021 - "POST /api/logout HTTP/1.1" 200 OK
+data
+{'email': 'a@a.com', 'password': 'aaaaaa'}
+rowId
+19
+token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+json_response
+INFO:     112.150.248.103:59028 - "POST /api/login HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:59028 - "GET /api/bookmarks HTTP/1.1" 200 OK
+🛠 current_user_id_or_401() token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+🛠 verify_token returned email: a@a.com
+INFO:     112.150.248.103:59029 - "GET /api/sessions HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:59029 - "GET /api/sessions/44a01bdc-dc03-4a01-a123-fb68c5857d9f/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:59029 - "GET /api/sessions/544361bd-aa18-48fd-8dd7-108195d6ee83/logs HTTP/1.1" 200 OK
+🐛 verify_token() got token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5jb20iLCJleHAiOjE3NDg0MzUyNDd9.9zhlPeuDzEG-gGNw4xZuGiCclmGzq5zSu-7LYBz5Sio
+🐛 → decoded payload: {'email': 'a@a.com', 'exp': 1748435247}
+INFO:     112.150.248.103:59029 - "GET /api/sessions/b8fa9d71-495b-49bf-b15d-e0db4f7b7346/logs HTTP/1.1" 200 OK

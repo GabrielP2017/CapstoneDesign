@@ -47,9 +47,11 @@ from Ai.SearchContent import find_restaurant_nearby
 # 1) 환경 변수 & 상수
 # ────────────────────────────────────────────────
 load_dotenv()
+ENV = os.getenv("APP_ENV", "development")
 SECRET_KEY = os.getenv("SECRET_KEY", "capstone-secret")
 Maps_API_KEY = os.getenv("Maps_API_KEY")
 DATABASE = "AICHAT_database.db"
+print(f"🔑 Loaded SECRET_KEY = {SECRET_KEY}", flush=True)
 
 # 업로드 설정 (사용 예정)
 UPLOAD_DIR = os.path.join(os.path.dirname(__file__), "uploads")
@@ -78,7 +80,9 @@ init_db()
 
 # ─── 모든 세션 API에서 공용으로 쓰는 helper ─────────────
 def current_user_id_or_401(token: Optional[str]) -> int:
+    print(f"🛠 current_user_id_or_401() token: {token}", flush=True)
     email = verify_token(token)
+    print(f"🛠 verify_token returned email: {email}", flush=True)
     if not email:
         raise HTTPException(401, "로그인이 필요합니다.")
     conn = get_db(); cur = conn.cursor()
@@ -124,12 +128,19 @@ def generate_token(email: str) -> str:
     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
 def verify_token(token: Optional[str]) -> Optional[str]:
+    print(f"🐛 verify_token() got token: {token}", flush=True)
     if not token:
+        print("🐛 → no token, returning None", flush=True)
         return None
     try:
-        return jwt.decode(token, SECRET_KEY, algorithms=["HS256"])["email"]
-    except Exception as e:
-        print("verify_token error:", e) # 로그
+        payload = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        print(f"🐛 → decoded payload: {payload}", flush=True)
+        return payload.get("email")
+    except jwt.ExpiredSignatureError:
+        print("🐛 → token expired", flush=True)
+        return None
+    except jwt.InvalidTokenError as e:
+        print(f"🐛 → invalid token: {e}", flush=True)
         return None
     
 def allowed_file(filename: str) -> bool:
@@ -201,6 +212,8 @@ async def api_signup(data: dict):
 
 @app.post("/api/login")
 async def api_login(response: Response, data: dict):
+    print("data")
+    print(data)
     email = data.get("email")
     pw = data.get("password")
 
@@ -213,24 +226,57 @@ async def api_login(response: Response, data: dict):
     row = cur.fetchone()
     conn.close()
 
+    print("rowId")
+    print(row["id"])
     if not row or not check_password(pw, row["hashed_password"]):
         raise HTTPException(401, "이메일 또는 비밀번호가 틀렸습니다.")
     
     token = generate_token(email)
-
+    print("token")
+    print(token)
     json_response = JSONResponse(content={
         "success": True, 
         "message": "로그인 성공", 
         "data": {"id": row["id"], "name": row["name"], "email": email}
     })
 
-    json_response.set_cookie(
-        key="token",
-        value=token,
-        httponly=True,
-        samesite="None", # 크로스 오리진 허용
-        secure=True
-    )
+    print("json_response")
+    # print(json_response)
+    # # json_response.set_cookie(
+    # #     key="token",
+    # #     value=token,
+    # #     httponly=True,
+    # #     samesite="None", # 크로스 오리진 허용
+    # #     secure=True
+    # # )
+    # json_response.set_cookie(
+    #     key="token",
+    #     value=token,
+    #     httponly=True,
+    #     secure=False,
+    #     samesite="Lax", 
+    #     domain="43.203.44.237",
+    #     path= "/"
+    # )
+    if ENV == "production":
+        json_response.set_cookie(
+            key="token",
+            value=token,
+            httponly=True,
+            secure=False,  # HTTPS 사용 시 True
+            samesite="Lax",
+            domain="43.203.44.237",  # 실제 도메인/IP
+            path="/"
+        )
+    else:
+        json_response.set_cookie(
+            key="token",
+            value=token,
+            httponly=True,
+            secure=True,
+            samesite="None"
+        )
+
 
     return json_response
 

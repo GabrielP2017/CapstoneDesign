@@ -1,3 +1,3 @@
 source venv/bin/activate
-nohup python3 app.py --host &
+nohup env APP_ENV=production python3 app.py  &
 disown

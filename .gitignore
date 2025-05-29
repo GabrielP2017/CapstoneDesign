@@ -31,6 +31,7 @@ ENV/
 # Environments
 .env
 backend/.env
+backend/AICHAT_database.db
 
 # ┌────────── IDE / Editor ──────────
 .vscode/
