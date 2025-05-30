@@ -127,6 +127,16 @@ const ChatContainer = () => {
             </div>
           </div>
         ))}
+        {/* 챗봇이 응답 중일 때 애니메이션 표시 */}
+        {messages.length > 0 && messages[messages.length - 1].role === "user" && (
+          <div className="chat chat-start">
+            <div className="chat-bubble bg-base-300 text-base-content w-fit px-4 py-2 flex items-center justify-center gap-[4px] animate-pulse text-xl">
+              <span className="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
+              <span className="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></span>
+              <span className="w-1.5 h-1.5 bg-gray-500 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></span>
+            </div>
+          </div>
+        )}
       </div>
 
       <MessageInput onSend={sendMessage} />

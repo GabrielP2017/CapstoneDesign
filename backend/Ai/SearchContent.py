@@ -20,12 +20,18 @@ def find_restaurant_nearby(food, location="서울, 경기"):
         "key": GOOGLE_MAPS_API_KEY,
         "language": "ko"
     }
+    
+    print("🔍 검색 쿼리:", params["query"])
 
     res = requests.get(endpoint, params=params)
     results = res.json()
 
     if results.get("status") == "OK" and results["results"]:
         place = results["results"][0]
+        
+        print("📍 검색된 장소:", place.get("name"))
+        print("🗺️  좌표:", place["geometry"]["location"]["lat"], place["geometry"]["location"]["lng"])
+        
         return {
             "name": place.get("name"),
             "address": place.get("formatted_address"),

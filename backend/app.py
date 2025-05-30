@@ -43,6 +43,8 @@ from Ai.Logic import (
 )
 from Ai.SearchContent import find_restaurant_nearby
 
+from urllib.parse import unquote
+
 # ────────────────────────────────────────────────
 # 1) 환경 변수 & 상수
 # ────────────────────────────────────────────────
@@ -351,7 +353,10 @@ async def get_response(
             food = random.choice(["김밥","떡볶이","비빔밥","갈비탕","파스타","치킨"])
             reply_text = f"{food} 추천해드려요!"
 
-        restaurant = find_restaurant_nearby(food) #
+        raw_location = request.cookies.get("user_location", "서울, 경기")
+        location = unquote(raw_location)
+        restaurant = find_restaurant_nearby(food, location) #
+        print("📍 쿠키에서 받은 location:", location)
         if restaurant:
             # ◀ 변경: 지도 링크 포함
             lat = restaurant.get("latitude")

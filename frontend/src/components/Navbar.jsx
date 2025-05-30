@@ -7,13 +7,21 @@
  * 3) 인증된 사용자에 한해 로그아웃 버튼 렌더링
  * 4) 즐겨찾기 목록 렌더링
  * 5) 즐겨찾기 목록에서 장소 클릭 시 모달창으로 지도 출력
+ * 6) 위치 설정 버튼 및 주소 입력 모달 추가
+ *    - 주소 입력 시 Zustand 전역 상태에 저장
+ * 7) 최근 검색어 localStorage 저장 기능
+ *    - 최대 5개까지 저장, 중복 제거
+ *    - 입력창 위에 버튼 형태로 출력
+ *    - 각 주소 옆에 ✕ 버튼으로 개별 삭제 가능
  * ----------------------------------------------------------------------------------- */
 import { Link } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
-import { LogOut, Settings, Star } from "lucide-react";
+import { LogOut, Settings, Star, MapPin } from "lucide-react";
 import FavoritesList from "./BookmarkList";
-import React, { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useLocationStore } from "../store/useLocationStore";
+
 
 // ────────────────────────────────────────────────────────────────────────────────────
 // 1) 상태 및 함수 가져오기
@@ -27,6 +35,38 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
   const toggleFavoritesList = () => {
     setIsFavoritesListVisible(!isFavoritesListVisible);
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  const setLocation = useLocationStore((state) => state.setLocation);
+
+  const [recentLocations, setRecentLocations] = useState([]);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    const match = document.cookie.match(/user_location=([^;]+)/);
+    if (match) {
+      const decoded = decodeURIComponent(match[1].replace(/"/g, ""));
+      setLocation(decoded); // Zustand 초기화
+    }
+  }, []);  
+
+  const saveToRecentLocations = (newAddress) => {
+    const key = "recentLocations";
+    const existing = JSON.parse(localStorage.getItem(key)) || [];
+    const updated = [newAddress, ...existing.filter(loc => loc !== newAddress)].slice(0, 5);
+    localStorage.setItem(key, JSON.stringify(updated));
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      const stored = JSON.parse(localStorage.getItem("recentLocations")) || [];
+      setRecentLocations(stored);
+    }
+  }, [isModalOpen]);
+
+
+  
 
   // ──────────────────────────────────────────────────────────────────────────────────
   // 2) JSX 반환
@@ -53,6 +93,16 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
           </div>
           {/* 설정창 */}
           <div className="flex items-center gap-3">
+
+          {authUser && (
+          <button
+            className="btn btn-sm gap-2"
+            onClick={() => setIsModalOpen(true)}
+          >
+            <MapPin className="size-4" />
+            <span className="hidden sm:inline">위치</span>
+          </button>
+          )}
             <button onClick={onSettingsClick} className="btn btn-sm gap-2 transition-colors">
               <Settings className="w-4 h-4" />
               <span className="hidden sm:inline">테마</span>
@@ -89,6 +139,99 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+  <div
+    className="fixed w-screen h-screen inset-0 z-50 flex items-center justify-center bg-black/50"
+    onClick={(e) => {
+      if (e.target === e.currentTarget) {
+        setIsModalOpen(false);
+      }
+    }}
+  >
+    <AnimatePresence>
+      <motion.div
+        key="location-modal"
+        className="w-[80%] max-w-[400px] bg-base-200 rounded-lg shadow-lg p-6 z-[1001] outline-none"
+        initial={{ opacity: 0, scale: 0.6 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.6 }}
+        transition={{ duration: 0.25, ease: "easeInOut" }}
+      >
+        <h2 className="text-lg font-bold mb-4">주소를 입력하세요</h2>
+        <input
+          ref={inputRef}
+          type="text"
+          placeholder="주소입력"
+          className="input input-bordered w-full mb-2"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              setLocation(inputValue);
+              saveToRecentLocations(inputValue);
+              document.cookie = `user_location=${encodeURIComponent(inputValue)}; path=/`;
+              setIsModalOpen(false);
+            }
+          }}
+        />
+        {recentLocations.length > 0 && (
+          <div className="mb-3">
+            <ul className="flex flex-wrap gap-2">
+            {recentLocations.map((addr, i) => (
+            <div
+              key={i}
+              className="flex items-center px-2 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+            >
+              <button
+                onClick={() => {
+                  setInputValue(addr);
+                  setTimeout(() => {
+                    inputRef.current?.focus();
+                  }, 0);
+                }}               
+                className="mr-1 text-sm"
+              >
+                {addr}
+              </button>
+              <button
+                onClick={() => {
+                  const updated = recentLocations.filter((a) => a !== addr);
+                  setRecentLocations(updated);
+                  localStorage.setItem("recentLocations", JSON.stringify(updated));
+                }}
+                className="ml-1 text-xs text-gray-500 hover:text-red-500"
+                title="삭제"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+            </ul>
+          </div>
+        )}
+        <div className="flex justify-end gap-2">
+          <button
+            className="btn btn-sm"
+            onClick={() => setIsModalOpen(false)}
+          >
+            취소
+          </button>
+          <button
+            className="btn btn-sm btn-primary"
+            onClick={() => {
+              setLocation(inputValue);
+              saveToRecentLocations(inputValue);
+              document.cookie = `user_location=${encodeURIComponent(inputValue)}; path=/`;
+              setIsModalOpen(false);
+            }}
+          >
+            확인
+          </button>
+        </div>
+      </motion.div>
+    </AnimatePresence>
+  </div>
+)}
     </header>
   );
 };

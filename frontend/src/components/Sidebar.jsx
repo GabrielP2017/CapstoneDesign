@@ -6,13 +6,15 @@
  *   2) 새로운 채팅 버튼으로 첫 번째 사용자 선택 처리
  *   3) 사용자 리스트 렌더링 및 선택된 사용자 강조
  *   4) useAuthStore로 온라인 사용자 표시
+ *   5) Zustand를 통해 저장된 사용자 주소(location) 표시
+ *    - 주소 미입력 시 "시작하기" 텍스트 표시
  * ----------------------------------------------------------------------------------- */
 
 import React from "react";
 import { useChatStore } from "../store/useChatStore";
 import { useAuthStore } from "../store/useAuthStore";
-import { Users } from "lucide-react";
-import { Trash2 } from "lucide-react"; // 휴지통 아이콘
+import { Trash2, MapPin, MessageSquarePlus } from "lucide-react"; // 휴지통 아이콘
+import { useLocationStore } from "../store/useLocationStore";
 
 {
   /* 백엔드가 연결되어있지 않아 유저 현재 상태에 대한 코드가 작동되지 않고 있음 */
@@ -31,6 +33,7 @@ const Sidebar = () => {
   const myId = authUser?.id;
   const me = authUser;
   /*const sessions = chatSessions[myId]?.sessions || []; */
+  const location = useLocationStore((state) => state.location);
   React.useEffect(() => {
     getSessions();
   }, [getSessions]);
@@ -66,17 +69,18 @@ const Sidebar = () => {
     >
       <div className="border-b border-base-300 w-full p-5">
         <div className="flex items-center gap-2 mb-3">
-          <Users className="size-6" />
-          <span className="font-medium hidden lg:block">시작하기</span>
+          <MapPin className="size-5" />
+          <span className="font-bold hidden lg:block">{location || "위치를 설정해주세요"}</span>
         </div>
         {/* 새 채팅은 “내” id 로 메시지 배열 초기화 */}
         <button
           onClick={() => createSession("")}
-          className="w-full px-3 py-1 text-sm font-medium text-left rounded-md 
-					bg-base-200 hover:bg-base-300 transition-colors hidden lg:block cursor-pointer"
+          className="btn btn-primary w-[100%] mx-auto lg:flex justify-start gap-2 pl-18.5"
         >
-          + 새 채팅
+          <MessageSquarePlus className="w-5 h-5" />
+          새 채팅
         </button>
+
       </div>
 
       <div className="overflow-y-auto w-full py-3">
