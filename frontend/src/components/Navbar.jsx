@@ -16,11 +16,12 @@
  * ----------------------------------------------------------------------------------- */
 import { Link } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
-import { LogOut, Settings, Star, MapPin } from "lucide-react";
+import { LogOut, Settings, Star, MapPin, Info } from "lucide-react";
 import FavoritesList from "./BookmarkList";
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocationStore } from "../store/useLocationStore";
+import HelpModal from "./HelpModal";
 
 
 // ────────────────────────────────────────────────────────────────────────────────────
@@ -36,6 +37,7 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
     setIsFavoritesListVisible(!isFavoritesListVisible);
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHelpModalOpen, setIsHelpModalOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
   const setLocation = useLocationStore((state) => state.setLocation);
@@ -93,6 +95,10 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
           </div>
           {/* 설정창 */}
           <div className="flex items-center gap-3">
+
+          <button className="btn btn-sm gap-2" onClick={() => setIsHelpModalOpen(true)}>
+              <Info className="w-4 h-4" />
+            </button>
 
           {authUser && (
           <button
@@ -232,6 +238,7 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
     </AnimatePresence>
   </div>
 )}
+  <HelpModal isOpen={isHelpModalOpen} onClose={() => setIsHelpModalOpen(false)} />
     </header>
   );
 };
