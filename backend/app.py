@@ -414,6 +414,7 @@ class SessionOut(BaseModel):
     title: Optional[str]
     created_at: datetime.datetime
     last_message: Optional[str] = Field(None, alias="last_message")
+    last_date: Optional[datetime.datetime] = Field(None, alias="last_date")
     class Config:
         populate_by_name = True
 

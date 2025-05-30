@@ -23,7 +23,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLocationStore } from "../store/useLocationStore";
 import HelpModal from "./HelpModal";
 
-
 // ────────────────────────────────────────────────────────────────────────────────────
 // 1) 상태 및 함수 가져오기
 //    - useAuthStore로 authUser(인증 정보) 및 logout 함수 가져오기
@@ -51,12 +50,12 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
       const decoded = decodeURIComponent(match[1].replace(/"/g, ""));
       setLocation(decoded); // Zustand 초기화
     }
-  }, []);  
+  }, []);
 
   const saveToRecentLocations = (newAddress) => {
     const key = "recentLocations";
     const existing = JSON.parse(localStorage.getItem(key)) || [];
-    const updated = [newAddress, ...existing.filter(loc => loc !== newAddress)].slice(0, 5);
+    const updated = [newAddress, ...existing.filter((loc) => loc !== newAddress)].slice(0, 5);
     localStorage.setItem(key, JSON.stringify(updated));
   };
 
@@ -66,9 +65,6 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
       setRecentLocations(stored);
     }
   }, [isModalOpen]);
-
-
-  
 
   // ──────────────────────────────────────────────────────────────────────────────────
   // 2) JSX 반환
@@ -95,20 +91,16 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
           </div>
           {/* 설정창 */}
           <div className="flex items-center gap-3">
-
-          <button className="btn btn-sm gap-2" onClick={() => setIsHelpModalOpen(true)}>
+            <button className="btn btn-sm gap-2" onClick={() => setIsHelpModalOpen(true)}>
               <Info className="w-4 h-4" />
             </button>
 
-          {authUser && (
-          <button
-            className="btn btn-sm gap-2"
-            onClick={() => setIsModalOpen(true)}
-          >
-            <MapPin className="size-4" />
-            <span className="hidden sm:inline">위치</span>
-          </button>
-          )}
+            {authUser && (
+              <button className="btn btn-sm gap-2" onClick={() => setIsModalOpen(true)}>
+                <MapPin className="size-4" />
+                <span className="hidden sm:inline">위치</span>
+              </button>
+            )}
             <button onClick={onSettingsClick} className="btn btn-sm gap-2 transition-colors">
               <Settings className="w-4 h-4" />
               <span className="hidden sm:inline">테마</span>
@@ -146,99 +138,93 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
         </div>
       </div>
       {isModalOpen && (
-  <div
-    className="fixed w-screen h-screen inset-0 z-50 flex items-center justify-center bg-black/50"
-    onClick={(e) => {
-      if (e.target === e.currentTarget) {
-        setIsModalOpen(false);
-      }
-    }}
-  >
-    <AnimatePresence>
-      <motion.div
-        key="location-modal"
-        className="w-[80%] max-w-[400px] bg-base-200 rounded-lg shadow-lg p-6 z-[1001] outline-none"
-        initial={{ opacity: 0, scale: 0.6 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.6 }}
-        transition={{ duration: 0.25, ease: "easeInOut" }}
-      >
-        <h2 className="text-lg font-bold mb-4">주소를 입력하세요</h2>
-        <input
-          ref={inputRef}
-          type="text"
-          placeholder="주소입력"
-          className="input input-bordered w-full mb-2"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              setLocation(inputValue);
-              saveToRecentLocations(inputValue);
-              document.cookie = `user_location=${encodeURIComponent(inputValue)}; path=/`;
+        <div
+          className="fixed w-screen h-screen inset-0 z-50 flex items-center justify-center bg-black/50"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
               setIsModalOpen(false);
             }
           }}
-        />
-        {recentLocations.length > 0 && (
-          <div className="mb-3">
-            <ul className="flex flex-wrap gap-2">
-            {recentLocations.map((addr, i) => (
-            <div
-              key={i}
-              className="flex items-center px-2 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+        >
+          <AnimatePresence>
+            <motion.div
+              key="location-modal"
+              className="w-[80%] max-w-[400px] bg-base-200 rounded-lg shadow-lg p-6 z-[1001] outline-none"
+              initial={{ opacity: 0, scale: 0.6 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.6 }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
             >
-              <button
-                onClick={() => {
-                  setInputValue(addr);
-                  setTimeout(() => {
-                    inputRef.current?.focus();
-                  }, 0);
-                }}               
-                className="mr-1 text-sm"
-              >
-                {addr}
-              </button>
-              <button
-                onClick={() => {
-                  const updated = recentLocations.filter((a) => a !== addr);
-                  setRecentLocations(updated);
-                  localStorage.setItem("recentLocations", JSON.stringify(updated));
+              <h2 className="text-lg font-bold mb-4">주소를 입력하세요</h2>
+              <input
+                ref={inputRef}
+                type="text"
+                placeholder="주소입력"
+                className="input input-bordered w-full mb-2"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    setLocation(inputValue);
+                    saveToRecentLocations(inputValue);
+                    document.cookie = `user_location=${encodeURIComponent(inputValue)}; path=/`;
+                    setIsModalOpen(false);
+                  }
                 }}
-                className="ml-1 text-xs text-gray-500 hover:text-red-500"
-                title="삭제"
-              >
-                ✕
-              </button>
-            </div>
-          ))}
-            </ul>
-          </div>
-        )}
-        <div className="flex justify-end gap-2">
-          <button
-            className="btn btn-sm"
-            onClick={() => setIsModalOpen(false)}
-          >
-            취소
-          </button>
-          <button
-            className="btn btn-sm btn-primary"
-            onClick={() => {
-              setLocation(inputValue);
-              saveToRecentLocations(inputValue);
-              document.cookie = `user_location=${encodeURIComponent(inputValue)}; path=/`;
-              setIsModalOpen(false);
-            }}
-          >
-            확인
-          </button>
+              />
+              {recentLocations.length > 0 && (
+                <div className="mb-3">
+                  <ul className="flex flex-wrap gap-2">
+                    {recentLocations.map((addr, i) => (
+                      <div key={i} className="flex items-center px-2 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200">
+                        <button
+                          onClick={() => {
+                            setInputValue(addr);
+                            setTimeout(() => {
+                              inputRef.current?.focus();
+                            }, 0);
+                          }}
+                          className="mr-1 text-sm"
+                        >
+                          {addr}
+                        </button>
+                        <button
+                          onClick={() => {
+                            const updated = recentLocations.filter((a) => a !== addr);
+                            setRecentLocations(updated);
+                            localStorage.setItem("recentLocations", JSON.stringify(updated));
+                          }}
+                          className="ml-1 text-xs text-gray-500 hover:text-red-500"
+                          title="삭제"
+                        >
+                          ✕
+                        </button>
+                      </div>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <div className="flex justify-end gap-2">
+                <button className="btn btn-sm" onClick={() => setIsModalOpen(false)}>
+                  취소
+                </button>
+                <button
+                  className="btn btn-sm btn-primary"
+                  onClick={() => {
+                    setLocation(inputValue);
+                    saveToRecentLocations(inputValue);
+                    document.cookie = `user_location=${encodeURIComponent(inputValue)}; path=/`;
+                    setIsModalOpen(false);
+                  }}
+                >
+                  확인
+                </button>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
-      </motion.div>
-    </AnimatePresence>
-  </div>
-)}
-  <HelpModal isOpen={isHelpModalOpen} onClose={() => setIsHelpModalOpen(false)} />
+      )}
+      <HelpModal isOpen={isHelpModalOpen} onClose={() => setIsHelpModalOpen(false)} />
     </header>
   );
 };

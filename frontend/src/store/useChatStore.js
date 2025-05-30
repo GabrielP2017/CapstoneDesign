@@ -225,6 +225,9 @@ export const useChatStore = create((set, get) => ({
     // 1) 사용자 메시지 로컬 반영
     const userMsg = { id: Date.now(), role: "user", message: text, createdAt: new Date().toISOString() };
     set({ messages: [...messages, userMsg] });
+    set((state) => ({
+      sessions: state.sessions.map((sess) => (sess.id === currentSessionId ? { ...sess, last_message: userMsg.message, last_date: userMsg.createdAt } : sess)),
+    }));
 
     // 2) 서버 호출 (session_id 포함)
     const form = new FormData();
@@ -247,6 +250,11 @@ export const useChatStore = create((set, get) => ({
     };
     set({ messages: [...get().messages, assistantMsg] });
 
+    set((state) => ({
+      sessions: state.sessions.map((sess) =>
+        sess.id === currentSessionId ? { ...sess, last_message: assistantMsg.message, last_date: assistantMsg.createdAt } : sess
+      ),
+    }));
     console.log(assistantMsg);
     // if (res.data.restaurant) showMap(res.data.restaurant);
   },

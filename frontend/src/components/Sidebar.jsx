@@ -10,7 +10,7 @@
  *    - 주소 미입력 시 "시작하기" 텍스트 표시
  * ----------------------------------------------------------------------------------- */
 
-import React from "react";
+import React, { useState } from "react";
 import { useChatStore } from "../store/useChatStore";
 import { useAuthStore } from "../store/useAuthStore";
 import { Trash2, MapPin, MessageSquarePlus } from "lucide-react"; // 휴지통 아이콘
@@ -23,7 +23,7 @@ import { useLocationStore } from "../store/useLocationStore";
 const Sidebar = () => {
   const { getSessions, createSession, sessions, currentSessionId, setSession, deleteSession } = useChatStore();
 
-  const { onlineUsers, authUser } = useAuthStore();
+  const { onlineUsers, authUser, messages } = useAuthStore();
 
   // ────────────────────────────────────────────────────────────────────────────────────
   // 1) 사용자 목록 초기 로드
@@ -32,6 +32,7 @@ const Sidebar = () => {
 
   const myId = authUser?.id;
   const me = authUser;
+  const [repaint, setRepaint] = useState(0);
   /*const sessions = chatSessions[myId]?.sessions || []; */
   const location = useLocationStore((state) => state.location);
   React.useEffect(() => {
@@ -73,20 +74,26 @@ const Sidebar = () => {
           <span className="font-bold hidden lg:block">{location || "위치를 설정해주세요"}</span>
         </div>
         {/* 새 채팅은 “내” id 로 메시지 배열 초기화 */}
-        <button
-          onClick={() => createSession("")}
-          className="btn btn-primary w-[100%] mx-auto lg:flex justify-start gap-2 pl-18.5"
-        >
-          <MessageSquarePlus className="w-5 h-5" />
-          새 채팅
+        <button onClick={() => createSession("")} className="btn btn-primary w-full mx-auto flex justify-center px-3">
+          <div className="flex items-center gap-2">
+            <MessageSquarePlus className="w-5 h-5" />
+            <span className="hidden lg:inline">새 채팅</span>
+          </div>
         </button>
-
       </div>
 
       <div className="overflow-y-auto w-full py-3">
         {sessions.map((sess, idx) => {
           const selected = sess.id === currentSessionId;
           const lastText = sess.last_message ? sess.last_message.slice(0, 10) : "새 대화";
+          const lastDate = sess.last_date
+            ? new Date(sess.last_date).toLocaleDateString("ko-KR", {
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+              })
+            : "";
 
           return (
             <div
@@ -102,8 +109,8 @@ const Sidebar = () => {
               <div className="flex items-center gap-3 flex-1">
                 {/* <img src={me.profilePic || "/avatar.png"} alt={me.name} className="size-12 rounded-full" /> */}
                 <div className="ml-2 truncate">
-                  <div className="font-medium">{`${authUser.name} #${idx + 1}`}</div>
-                  <div className="text-sm text-zinc-400 truncate">{lastText}</div>
+                  <div className="font-medium">{lastText}</div>
+                  <div className="text-sm text-zinc-400 truncate">{lastDate}</div>
                 </div>
               </div>
 

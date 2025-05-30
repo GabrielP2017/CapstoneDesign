@@ -154,17 +154,26 @@ def create_session(user_id: int, title: str = None) -> str:
     return session_id
 
 def read_sessions(user_id: int) -> list[dict]:
-    conn   = get_db()
-    rows   = conn.execute("""
-        SELECT s.id,
-            COALESCE(s.title,'')   AS title,
+    conn = get_db()
+    rows = conn.execute("""
+        SELECT
+            s.id,
+            COALESCE(s.title, '') AS title,
             s.created_at,
-            ( SELECT message
-                FROM   chat_logs
-                WHERE  session_id = s.id
+            (
+                SELECT message
+                FROM chat_logs
+                WHERE session_id = s.id
                 ORDER BY created_at DESC
                 LIMIT 1
-            )                      AS last_message
+            ) AS last_message,
+            (
+                SELECT created_at
+                FROM chat_logs
+                WHERE session_id = s.id
+                ORDER BY created_at DESC
+                LIMIT 1
+            ) AS last_date
         FROM chat_sessions AS s
         WHERE s.user_id = ?
         ORDER BY s.created_at DESC;
