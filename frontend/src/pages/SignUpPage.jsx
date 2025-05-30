@@ -89,7 +89,9 @@ const SignUpPage = () => {
                 />
               </div>
               <h1 className="text-2xl font-bold mt-2">계정 생성하기</h1>
-              <p className="text-base-content/60">계정 생성하고 시작하기</p>
+              <p className="text-base-content/60">이 사이트는 데모용 체험 사이트입니다.<br/>
+              실제로 사용하는 이메일이나 비밀번호는 입력하지 마세요.<br/>
+              가상의 이메일과 비밀번호를 자유롭게 입력해 주세요.</p>
             </div>
           </div>
 

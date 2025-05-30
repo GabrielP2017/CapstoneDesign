@@ -25,30 +25,21 @@ const HelpModal = ({ isOpen, onClose }) => {
           exit={{ opacity: 0, scale: 0.6 }}
           transition={{ duration: 0.25, ease: "easeInOut" }}
         >
-          <h2 className="text-xl font-bold mb-5 text-center text-primary-content">마음맛집 사용 가이드</h2> {/* 제목 스타일 변경 */}
+          <h2 className="text-xl font-bold mb-5 text-center">마음맛집 사용 가이드</h2> {/* 제목 스타일 변경 */}
           <div className="text-base-content leading-relaxed"> {/* 텍스트 기본 스타일 */}
             <p className="mb-4">
-              저희 <strong className="text-primary">마음맛집</strong>을 이용해 주셔서 감사합니다! 
-              아래에서 주요 기능들을 확인하고 앱을 더욱 효율적으로 사용해보세요.
+              저희 <strong className="text-primary">마음맛집</strong>을 이용해 주셔서 감사합니다!<br/>
+              아래에서 주요 기능들을 확인하고 효율적으로 사용해보세요.
             </p>
-            
             <h3 className="text-lg font-semibold mt-6 mb-3 text-secondary">주요 기능 안내:</h3> {/* 소제목 스타일 변경 */}
             <ul className="list-none space-y-4"> {/* 점 제거, 간격 크게 */}
-              <li className="flex items-start gap-3"> {/* 아이콘과 텍스트 정렬 */}
-                <img src="/newlogo2.png" alt="Home Logo" className="w-6 h-6 flex-shrink-0 text-blue-500 mt-0.5" /> {/* 아이콘 크기, 색상, 정렬 조정 */}
-                <div>
-                  <strong className="text-lg font-bold text-primary-focus">홈 로고</strong>
-                  <p className="text-sm text-base-content mt-1">
-                    로고를 클릭하시면 언제든지 <span className="font-semibold">메인 페이지로 돌아갈 수 있습니다.</span> 새로운 맛집 검색을 시작하거나 초기 화면으로 이동할 때 편리합니다.
-                  </p>
-                </div>
-              </li>
               <li className="flex items-start gap-3">
                 <MessageSquare className="w-6 h-6 flex-shrink-0 text-purple-500 mt-0.5" /> {/* 아이콘 추가 */}
                 <div>
                   <strong className="text-lg font-bold text-primary-focus">채팅 기능</strong>
                   <p className="text-sm text-base-content mt-1">
-                    저희 마음맛집은 사용자의 기분을 중점으로 식당을 추천해드리기에 <span className="font-semibold"> 기분에 관련된 내용을 채팅에 입력해주세요.</span>
+                    저희 마음맛집은 사용자의 기분을 중점으로 식당을 추천해드리기에 <span className="font-semibold"> 기분에 관련된 내용을 채팅에 입력해주세요.</span><br/>
+                    (예: 오늘 기분이 우울해, 오늘 일이 안풀려서 짜증나)
                   </p>
                 </div>
               </li>
@@ -57,8 +48,9 @@ const HelpModal = ({ isOpen, onClose }) => {
                 <div>
                   <strong className="text-lg font-bold text-primary-focus">위치 설정</strong>
                   <p className="text-sm text-base-content mt-1">
-                    현재 계신 곳이나 원하는 <span className="font-semibold">위치를 설정하여 주변 맛집을 검색</span>할 수 있습니다. 정확한 위치 정보로 맞춤형 결과를 경험하세요.<br/>
-                    (예: 서울특별시 중구, 경기도 안양시 동안구 비산1동)
+                    원하는 <span className="font-semibold">위치를 설정하여 주변 맛집을 검색</span>할 수 있습니다. 정확한 주소를 입력할수록 더 정밀한 결과를 얻을 수 있으며,<br/>
+                    예를 들어 ‘서울’처럼 넓은 지역명만 입력할 경우 서울 전역의 맛집이 검색됩니다.<br/>
+                    (예: 서울특별시, 안양시 동안구 비산동)
                   </p>
                 </div>
               </li>

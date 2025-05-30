@@ -104,7 +104,18 @@ const AuthImagePattern = ({ title, subtitle }) => {
       {/* ✅ title/subtitle: 항상 아래 고정 */}
       <div className="absolute bottom-32 left-1/2 -translate-x-1/2 text-center px-2">
         <h2 className="text-xl sm:text-2xl font-bold mb-4">{title}</h2>
-        <p className="text-sm sm:text-base text-base-content/60">{subtitle}</p>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={subtitle}
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.4 }}
+            className="whitespace-pre-line text-sm sm:text-base text-base-content/60"
+          >
+            {subtitle}
+          </motion.p>
+        </AnimatePresence>
       </div>
     </div>
   );

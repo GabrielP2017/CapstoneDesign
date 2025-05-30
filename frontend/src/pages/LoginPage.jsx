@@ -7,7 +7,7 @@
  *   3) 로그인 로딩 상태 표시
  *   4) AuthImagePattern으로 시각적 배경 패턴 렌더링
  * ----------------------------------------------------------------------------------- */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { Mail, Lock, Loader2, Eye, EyeOff } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -28,6 +28,23 @@ const LoginPage = () => {
   });
 
   const { login, isLoggingIn } = useAuthStore();
+
+  const subtitles = [
+    "오늘 당신의 기분, 어떤 맛으로 위로받고 싶으신가요?",
+    "이 사이트는 체험용 데모입니다. \n실제 정보 없이 자유롭게 이용해보세요.",
+    "감정에 따라 음식이 추천되고, \n가까운 맛집까지 한눈에 확인할 수 있어요.",
+    "기분에 맞춰 맛집을 추천해주는 맞춤형 AI 검색 서비스입니다."
+  ];
+  
+  const [subtitleIndex, setSubtitleIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSubtitleIndex((prev) => (prev + 1) % subtitles.length);
+    }, 5000); // 5초 간격
+    return () => clearInterval(interval);
+  }, []);
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -123,10 +140,10 @@ const LoginPage = () => {
       {/* 오른쪽 화면 */}
       <AuthImagePattern
         title={"마음맛집에 오신걸 환영합니다!"}
-        subtitle={"AI를 통한 상담을 이어가세요! 우리는 여러분의 고민을 덜어드리기 위해 최선을 다하고있습니다!"}
+        subtitle={subtitles[subtitleIndex]}
       />
     </div>
-  );
+  ); 
 };
 
 export default LoginPage;
