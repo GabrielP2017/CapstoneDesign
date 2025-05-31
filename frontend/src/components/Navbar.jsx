@@ -82,12 +82,15 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
       <div className="container mx-auto px-4 h-16">
         <div className="flex items-center justify-between h-full">
           <div className="flex items-center gap-8">
-            <Link to="/" className="flex items-center gap-2.5 hover:opacity-80 transition-all">
-              <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                <img src="/newlogo2.png" alt="description" className="w-7 h-7 object-contain" />
-              </div>
-              <h1 className="text-lg font-bold">마음맛집</h1>
-            </Link>
+          <Link
+            to="/"
+            className="flex items-center gap-2.5 hover:opacity-80 transition-all md:flex"
+          >
+            <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center md:flex hidden">
+              <img src="/newlogo2.png" alt="description" className="w-7 h-7 object-contain" />
+            </div>
+            <h1 className="text-lg font-bold hidden md:block">마음맛집</h1>
+          </Link>
           </div>
           {/* 설정창 */}
           <div className="flex items-center gap-3">

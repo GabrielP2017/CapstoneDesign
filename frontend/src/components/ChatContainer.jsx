@@ -95,13 +95,15 @@ const ChatContainer = () => {
         {messages.map((msg, idx) => (
           <div key={msg.id ?? idx} className={`chat ${msg.role === "user" ? "chat-end" : "chat-start"}`}>
             <div className="chat-header mb-1">
-              {msg.createdAt && <time className="text-xs opacity-50 ml-1">{formatMessageTime(msg.createdAt)}</time>}
+            {msg.createdAt && msg.role === "user" && (
+              <time className="text-xs opacity-0 ml-1">{formatMessageTime(msg.createdAt)}</time>
+            )}
               <div className="chat-bubble flex flex-col max-w-[80%]">
                 {/* 이미지가 있으면 */}
                 {msg.image && <img src={msg.image} alt="Attachment" className="sm:max-w-[200px] rounded-md mb-2" />}
                 {/* response (HTML) 우선, 없으면 plain message */}
                 {/*<div className="whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: msg.response }} />*/}
-                <div className="whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: msg.message }}></div>
+                <div className="whitespace-pre-wrap " dangerouslySetInnerHTML={{ __html: msg.message }}></div>
                 {msg.name && (
                   <div className="flex gap-2 mt-2">
                     <button

@@ -64,10 +64,12 @@ const Sidebar = () => {
   const logs = entry ? entry.sessions[entry.current] : []; */
 
   return (
-    <aside
-      className="h-full w-20 lg:w-72 border-r border-base-300
-		flex flex-col transition-all duration-200"
-    >
+<aside
+  className="h-full flex flex-col transition-all duration-200
+    md:w-20 md:lg:w-72 md:border-r md:border-base-300 md:overflow-hidden
+    w-full overflow-y-auto"
+>
+
       <div className="border-b border-base-300 w-full p-5">
         <div className="flex items-center gap-2 mb-3">
           <MapPin className="size-5" />
@@ -82,7 +84,7 @@ const Sidebar = () => {
         </button>
       </div>
 
-      <div className="overflow-y-auto w-full py-3">
+      <div className="flex-1 overflow-y-auto w-full py-3">
         {sessions.map((sess, idx) => {
           const selected = sess.id === currentSessionId;
           const lastText = sess.last_message ? sess.last_message.slice(0, 10) : "새 대화";
