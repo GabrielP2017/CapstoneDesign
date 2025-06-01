@@ -31,9 +31,7 @@ const NoChatSelected = () => {
         {/* 환영인사말 */}
         <h2 className="text-2xl font-bold">마음 맛집에 오신것을 환영합니다!</h2>
         <p className="text-base-content/60 inline-flex items-center gap-1 justify-center">
-        상단
-          <Info className="w-4 h-4 inline-block text-primary" />
-          을 클릭하면 마음맛집의 사용법을 안내해드립니다.
+          상단 도움말을 클릭하면 마음맛집의 사용법을 안내해드립니다.
         </p>
       </div>
     </div>
