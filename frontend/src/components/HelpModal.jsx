@@ -17,9 +17,9 @@ const HelpModal = ({ isOpen, onClose }) => {
       }}
     >
       <AnimatePresence>
-        <motion.div
-          key="help-modal"
-          className="w-[80%] max-w-[500px] bg-base-200 rounded-lg shadow-lg p-6 z-[1001] outline-none"
+      <motion.div
+        key="help-modal"
+        className="w-[90%] max-w-md max-h-[90vh] overflow-y-auto bg-base-200 rounded-lg shadow-lg p-4 z-[1001] outline-none"
           initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.6 }}

@@ -95,7 +95,7 @@ const Navbar = ({ onPlaceClick, onSettingsClick }) => {
           {/* 설정창 */}
           <div className="flex items-center gap-3">
             <button className="btn btn-sm gap-2" onClick={() => setIsHelpModalOpen(true)}>
-              <Info className="w-4 h-4" />
+              <Info className="w-4.5 h-4.5" />
             </button>
 
             {authUser && (

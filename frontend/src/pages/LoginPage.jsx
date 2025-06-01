@@ -41,7 +41,7 @@ const LoginPage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSubtitleIndex((prev) => (prev + 1) % subtitles.length);
-    }, 5000); // 5초 간격
+    }, 3000); // 3초 간격
     return () => clearInterval(interval);
   }, []);
   
@@ -137,11 +137,13 @@ const LoginPage = () => {
         </div>
       </div>
 
-      {/* 오른쪽 화면 */}
-      <AuthImagePattern
-        title={"마음맛집에 오신걸 환영합니다!"}
-        subtitle={subtitles[subtitleIndex]}
-      />
+      {/* 오른쪽 화면 (PC 전용) */}
+      <div className="hidden lg:block">
+        <AuthImagePattern
+          title={"마음맛집에 오신걸 환영합니다!"}
+          subtitle={subtitles[subtitleIndex]}
+        />
+      </div>
     </div>
   ); 
 };

@@ -183,8 +183,10 @@ const SignUpPage = () => {
         </div>
       </div>
 
-      {/* 오른쪽 화면 */}
+      {/* 오른쪽 화면 (pc 전용) */}
+      <div className="hidden lg:block">
       <AuthImagePattern title="당신의 하루를 마무리 하는 식사" subtitle="당신의 오늘을 알아채고, 가장 필요한 식사를 찾아드립니다" />
+      </div>
     </div>
   );
 };

@@ -157,14 +157,14 @@ const BookmarkList = ({ onClose, onPlaceClick }) => {
   // ------------------------------------------------------------------------------------
   return (
     // 애니메이션 추가
+    
     <motion.div
       initial={{ opacity: 0, height: 0 }}
       animate={{ opacity: 1, height: "auto" }}
       exit={{ opacity: 0, height: 0 }}
       transition={{ duration: 0.3 }}
-      className="absolute top-full right-0 mt-2 bg-base-200 rounded-md shadow-lg border border-gray-200 z-50"
-      style={{ width: "400px", maxHeight: "400px", overflowY: "auto" }}
-    >
+      className="absolute top-full right-[-16px] mt-2 px-1 bg-base-200 rounded-md shadow-lg border border-gray-200 z-50 w-[90vw] max-w-sm sm:w-[400px] max-h-[80vh] overflow-y-auto"
+      >
       {/* 헤더: 제목 및 추가/닫기 버튼 */}
       <div className="flex justify-between items-center px-4 py-2">
         <h2 className="text-lg font-bold">즐겨찾기 목록</h2>
@@ -246,7 +246,7 @@ const BookmarkList = ({ onClose, onPlaceClick }) => {
     <AnimatePresence>
       <motion.div
         key="add-modal"
-        className="w-[80%] max-w-[400px] bg-base-200 rounded-lg shadow-lg p-6 z-[1001] outline-none"
+        className="w-[80%] max-w-[400px] max-h-[90vh] overflow-y-auto bg-base-200 rounded-lg shadow-lg p-6 z-[1001] outline-none"
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.6 }}

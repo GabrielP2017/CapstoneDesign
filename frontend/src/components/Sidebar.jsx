@@ -73,10 +73,11 @@ const Sidebar = () => {
       <div className="border-b border-base-300 w-full p-5">
         <div className="flex items-center gap-2 mb-3">
           <MapPin className="size-5" />
-          <span className="font-bold hidden lg:block">{location || "위치를 설정해주세요"}</span>
+          <span className="font-bold block text-sm lg:text-base">{location || "위치를 설정해주세요"}</span>
         </div>
         {/* 새 채팅은 “내” id 로 메시지 배열 초기화 */}
-        <button onClick={() => createSession("")} className="btn btn-primary w-full mx-auto flex justify-center px-3">
+        <button onClick={() => createSession("")} 
+        className="btn btn-primary w-full mx-auto flex justify-center px-3">
           <div className="flex items-center gap-2">
             <MessageSquarePlus className="w-5 h-5" />
             <span className="hidden lg:inline">새 채팅</span>

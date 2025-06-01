@@ -25,6 +25,7 @@ const HomePage = ({ shiftLeft }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { authUser } = useAuthStore();
   const isLoadedRef = useRef(false);
+  
 
   // ──────────────────────────────────────────────────────────────────────────────────
   // 2) useEffect: 컴포넌트 마운트 시 사용자 목록 로드 및 선택 초기화
@@ -62,7 +63,7 @@ const HomePage = ({ shiftLeft }) => {
 <div className="flex md:hidden h-screen w-screen relative overflow-hidden">
   {/* 사이드바 오픈 버튼 */}
   <button
-    className="fixed top-3 left-4 z-50 bg-white rounded-full p-2 shadow"
+    className="fixed top-5 left-4 z-40 "
     onClick={() => setSidebarOpen(true)}
   >
     <Menu size={24} />
