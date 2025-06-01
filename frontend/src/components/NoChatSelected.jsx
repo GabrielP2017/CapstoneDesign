@@ -6,6 +6,7 @@
  *   2) 메시지 입력 전 사이드바 클릭을 유도하는 가이드 제공
  * ----------------------------------------------------------------------------------- */
 import React from "react";
+import { Info } from "lucide-react";
 
 // ────────────────────────────────────────────────────────────────────────────────────
 // 1) NoChatSelected 컴포넌트 정의
@@ -29,7 +30,11 @@ const NoChatSelected = () => {
 
         {/* 환영인사말 */}
         <h2 className="text-2xl font-bold">마음 맛집에 오신것을 환영합니다!</h2>
-        <p className="text-base-content/60">왼쪽 사이드바에서 채팅방을 추가 또는 선택하세요</p>
+        <p className="text-base-content/60 inline-flex items-center gap-1 justify-center">
+        상단
+          <Info className="w-4 h-4 inline-block text-primary" />
+          을 클릭하면 마음맛집의 사용법을 안내해드립니다.
+        </p>
       </div>
     </div>
   );
