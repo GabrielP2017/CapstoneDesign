@@ -94,7 +94,7 @@ export const useAuthStore = create((set) => ({
 
       readBookmarks();
       console.log("loginSuccess");
-      
+
       toast.success(res.data.message || "로그인 성공!");
     } catch (error) {
       console.log(error);
@@ -110,7 +110,7 @@ export const useAuthStore = create((set) => ({
     const chat = useChatStore.getState();
     chat.$reset(); // 메모리 클리어
     chat.getSessions(); // ← 로그인 쿠키가 이미 심어졌으므로 OK
-    chat.setSession(null); 
+    chat.setSession(null);
   },
 
   // ────────────────────────────────────────────────────────────────────────────────
@@ -127,6 +127,7 @@ export const useAuthStore = create((set) => ({
       toast.error(error.response?.data?.message || "로그아웃 실패");
       console.log("logout:" + error.response?.data?.message);
     } finally {
+      document.cookie = "token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
       set({ authUser: null });
       localStorage.removeItem("authUser");
       useChatStore.getState().$reset();
