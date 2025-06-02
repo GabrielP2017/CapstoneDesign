@@ -300,9 +300,18 @@ async def api_status(token: Optional[str] = Cookie(None)):
 
 @app.post("/api/logout")
 async def api_logout(response: Response):
-    response.delete_cookie("token")
-    return {"success": True, "message": "로그아웃 되었습니다."}
+    if ENV == "production":
+        response.delete_cookie(
+            key="token",
+            domain="mamat.kr",
+            path="/"
+        )
+    else:
+        response.delete_cookie(
+            key="token"
+        )
 
+    return {"success": True, "message": "로그아웃 되었습니다."}
 # ────────────────────────────────────────────────
 # 7) AI 챗 & 음식 추천
 # ────────────────────────────────────────────────
