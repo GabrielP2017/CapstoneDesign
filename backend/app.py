@@ -149,6 +149,20 @@ def allowed_file(filename: str) -> bool:
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # ────────────────────────────────────────────────
+# 4-1) 인사 처리 함수 
+# ────────────────────────────────────────────────
+GREETING_KEYWORDS = ["안녕", "안녕하세요", "하이", "hello", "hi"]
+THANK_KEYWORDS   = ["고맙", "감사"]  # “고맙습니다”, “감사합니다” 등
+
+def is_greeting(text: str) -> bool:
+    t = text.strip().lower()
+    return any(keyword in t for keyword in GREETING_KEYWORDS)
+
+def is_thanks(text: str) -> bool:
+    t = text.strip().lower()
+    return any(keyword in t for keyword in THANK_KEYWORDS)
+
+# ────────────────────────────────────────────────
 # 5) 페이지 라우팅
 # ────────────────────────────────────────────────
 @app.get("/", response_class=HTMLResponse)
@@ -321,18 +335,14 @@ async def get_response(
     message: str = Form(...),
     session_id: Optional[str] = Form(None)
 ):
-    # 1) JWT에서 이메일 꺼내기
     token = request.cookies.get("token")
     email = verify_token(token)
     if not email:
         raise HTTPException(401, "로그인 정보가 없습니다.")
 
-    # 2) user_id 조회
-    conn = get_db()
-    cur  = conn.cursor()
+    conn = get_db(); cur = conn.cursor()
     cur.execute("SELECT id FROM users WHERE email = ?", (email,))
-    row = cur.fetchone()
-    conn.close()
+    row = cur.fetchone(); conn.close()
     if not row:
         raise HTTPException(401, "등록된 사용자가 아닙니다.")
     user_id = row["id"]
@@ -341,64 +351,101 @@ async def get_response(
         session_id = create_session(user_id, title=(message[:30] or None))
 
     text = message.strip()
+    save_chat(session_id, user_id, message, None, None, "user")
 
-    # 3) 사용자 메시지 저장
-    save_chat(session_id, user_id, message ,None,None,"user") #
-
-    # 타임스탬프 생성
     created_at = datetime.datetime.utcnow().isoformat() + "Z"
-    
-    off_topic_message = "주제와 맞지 않는 대화입니다. 감정이나 기분에 대해 말씀해주시면 관련된 음식을 추천해 드릴게요."
 
-    # 4) AI 응답 로직
-    if not text:
-        reply = "기분이나 명령을 입력해 주세요!"
-        save_chat(session_id, user_id, reply,None,None,"assistant") 
+    # 1) 인사 처리
+    if is_greeting(text):
+        reply = "안녕하세요! 무엇을 도와드릴까요? 감사합니다!"
+        save_chat(session_id, user_id, reply, None, None, "assistant")
         return {"message": reply, "createdAt": created_at}
 
-    if is_emotion_related(text): #
-        emotion, food, reply_text = classify_emotion_and_reply_with_gpt(text) 
+    # 2) 감사 인사 처리
+    if is_thanks(text):
+        reply = "별말씀을요! 또 궁금하신 게 있으면 언제든 말씀해 주세요"
+        save_chat(session_id, user_id, reply, None, None, "assistant")
+        return {"message": reply, "createdAt": created_at}
+
+    # 3) 다른 추천 요청 처리
+    if any(kw in text for kw in ["다른거 추천", "다른 추천"]):
+        foods = ["김밥", "떡볶이", "비빔밥", "갈비탕", "파스타", "치킨"]
+        new_food = random.choice(foods)
+        intro = f"{new_food}도 추천해드릴게요!"
+        raw_loc = request.cookies.get("user_location", "서울, 경기")
+        location = unquote(raw_loc)
+        restaurant = find_restaurant_nearby(new_food, location)
+        if restaurant:
+            map_url = f"https://www.google.com/maps/place/?q=place_id:{restaurant['place_id']}"
+            name = restaurant["name"]
+            formatted = (
+                f"{intro}<br><br>"
+                f"추천 식당: <strong>{name}</strong><br>"
+                f"주소: {restaurant['address']}<br>"
+                f"평점: {restaurant.get('rating','정보 없음')}점 "
+                f"(리뷰 {restaurant.get('reviews','없음')}명)<br><br>"
+                "즐거운 식사 되세요! 감사합니다!"
+            )
+            save_chat(session_id, user_id, formatted, map_url, name, "assistant")
+            return {
+                "message": formatted,
+                "restaurant": restaurant,
+                "name": name,
+                "url": map_url,
+                "createdAt": created_at
+            }
+        else:
+            reply = f"근처 '{new_food}' 식당을 찾지 못했습니다."
+            reply += " 다음에 더 좋은 곳을 알려드릴게요. 감사합니다!"
+            save_chat(session_id, user_id, reply, None, None, "assistant")
+            return {"message": reply, "createdAt": created_at}
+
+    # 4) 입력 비어있음 처리
+    if not text:
+        reply = "기분이나 명령을 입력해 주세요!"
+        save_chat(session_id, user_id, reply, None, None, "assistant")
+        return {"message": reply, "createdAt": created_at}
+
+    # 5) 감정 기반 추천 처리
+    if is_emotion_related(text):
+        emotion, food, reply_text = classify_emotion_and_reply_with_gpt(text)
         if not food:
             food = random.choice(["김밥","떡볶이","비빔밥","갈비탕","파스타","치킨"])
             reply_text = f"{food} 추천해드려요!"
 
-        raw_location = request.cookies.get("user_location", "서울, 경기")
-        location = unquote(raw_location)
-        restaurant = find_restaurant_nearby(food, location) #
-        print("📍 쿠키에서 받은 location:", location)
+        raw_loc = request.cookies.get("user_location", "서울, 경기")
+        location = unquote(raw_loc)
+        restaurant = find_restaurant_nearby(food, location)
         if restaurant:
-            # ◀ 변경: 지도 링크 포함
-            lat = restaurant.get("latitude")
-            lng = restaurant.get("longitude")
-            map_url = (
-                f"https://www.google.com/maps/place/?q=place_id:{restaurant['place_id']}"
-            )
-            name=restaurant.get("name")
+            map_url = f"https://www.google.com/maps/place/?q=place_id:{restaurant['place_id']}"
+            name = restaurant["name"]
             formatted = (
                 f"{reply_text}<br><br>"
-                f"추천 식당: <strong>{restaurant['name']}</strong><br>"
+                f"추천 식당: <strong>{name}</strong><br>"
                 f"주소: {restaurant['address']}<br>"
                 f"평점: {restaurant.get('rating','정보 없음')}점 "
-                f"(리뷰 {restaurant.get('reviews','없음')}명)<br>"
+                f"(리뷰 {restaurant.get('reviews','없음')}명)<br><br>"
+                "즐거운 식사 되세요! 감사합니다!"
             )
-            save_chat(session_id, user_id, formatted,map_url,name,"assistant") #
-            print(map_url)
-            print("aa")
+            save_chat(session_id, user_id, formatted, map_url, name, "assistant")
             return {
                 "message": formatted,
                 "restaurant": restaurant,
-                "name":name,
+                "name": name,
                 "url": map_url,
-                "createdAt": created_at,
+                "createdAt": created_at
             }
         else:
             reply = f"{reply_text}<br><br>근처 '{food}' 식당을 찾지 못했습니다."
-            save_chat(session_id, user_id, reply,None,None, "assistant") #
+            reply += " 다음에 더 좋은 곳을 알려드릴게요. 감사합니다!"
+            save_chat(session_id, user_id, reply, None, None, "assistant")
             return {"message": reply, "createdAt": created_at}
-    else:
-        # 감정 관련 내용이 아니면 모든 다른 기능(IntegratedAI 호출)을 비활성화하고 거절 메시지 반환
-        save_chat(session_id, user_id, off_topic_message, None, None, "assistant") 
-        return {"message": off_topic_message, "createdAt": created_at}
+
+    # 6) 기타 오프토픽 처리
+    off_topic = "주제와 맞지 않는 대화입니다. 감정이나 기분에 대해 말씀해주시면 관련된 음식을 추천해 드릴게요."
+    save_chat(session_id, user_id, off_topic, None, None, "assistant")
+    return {"message": off_topic, "createdAt": created_at}
+
 
 # ────────────────────────────────────────────────
 # 8) 채팅 로그 API
