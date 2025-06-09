@@ -152,7 +152,8 @@ def allowed_file(filename: str) -> bool:
 # 4-1) 인사 처리 함수 
 # ────────────────────────────────────────────────
 GREETING_KEYWORDS = ["안녕", "안녕하세요", "하이", "hello", "hi"]
-THANK_KEYWORDS   = ["고맙", "감사"]  # “고맙습니다”, “감사합니다” 등
+THANK_KEYWORDS   = ["고맙", "감사"]  
+RECOMMEND_KEYWORDS = ["다른거 추천", "다른 추천", "다시 추천", "재추천"]
 
 def is_greeting(text: str) -> bool:
     t = text.strip().lower()
@@ -161,6 +162,10 @@ def is_greeting(text: str) -> bool:
 def is_thanks(text: str) -> bool:
     t = text.strip().lower()
     return any(keyword in t for keyword in THANK_KEYWORDS)
+
+def is_recommend(text: str) -> bool:
+    t = text.strip().lower()
+    return any(k in t for k in RECOMMEND_KEYWORDS)
 
 # ────────────────────────────────────────────────
 # 5) 페이지 라우팅
@@ -335,11 +340,13 @@ async def get_response(
     message: str = Form(...),
     session_id: Optional[str] = Form(None)
 ):
+    # 토큰 검증
     token = request.cookies.get("token")
     email = verify_token(token)
     if not email:
         raise HTTPException(401, "로그인 정보가 없습니다.")
 
+    # user_id 조회
     conn = get_db(); cur = conn.cursor()
     cur.execute("SELECT id FROM users WHERE email = ?", (email,))
     row = cur.fetchone(); conn.close()
@@ -347,17 +354,17 @@ async def get_response(
         raise HTTPException(401, "등록된 사용자가 아닙니다.")
     user_id = row["id"]
 
+    # 세션 생성
     if not session_id:
         session_id = create_session(user_id, title=(message[:30] or None))
 
     text = message.strip()
     save_chat(session_id, user_id, message, None, None, "user")
-
     created_at = datetime.datetime.utcnow().isoformat() + "Z"
 
     # 1) 인사 처리
     if is_greeting(text):
-        reply = "안녕하세요! 무엇을 도와드릴까요? 감사합니다!"
+        reply = "안녕하세요! 무엇을 도와드릴까요?"
         save_chat(session_id, user_id, reply, None, None, "assistant")
         return {"message": reply, "createdAt": created_at}
 
@@ -367,8 +374,8 @@ async def get_response(
         save_chat(session_id, user_id, reply, None, None, "assistant")
         return {"message": reply, "createdAt": created_at}
 
-    # 3) 다른 추천 요청 처리
-    if any(kw in text for kw in ["다른거 추천", "다른 추천"]):
+    # 3) 추천 재요청 처리
+    if is_recommend(text):
         foods = ["김밥", "떡볶이", "비빔밥", "갈비탕", "파스타", "치킨"]
         new_food = random.choice(foods)
         intro = f"{new_food}도 추천해드릴게요!"
@@ -395,8 +402,7 @@ async def get_response(
                 "createdAt": created_at
             }
         else:
-            reply = f"근처 '{new_food}' 식당을 찾지 못했습니다."
-            reply += " 다음에 더 좋은 곳을 알려드릴게요. 감사합니다!"
+            reply = f"근처 '{new_food}' 식당을 찾지 못했습니다. 다음에 더 좋은 곳을 알려드릴게요. 감사합니다!"
             save_chat(session_id, user_id, reply, None, None, "assistant")
             return {"message": reply, "createdAt": created_at}
 
@@ -445,7 +451,6 @@ async def get_response(
     off_topic = "주제와 맞지 않는 대화입니다. 감정이나 기분에 대해 말씀해주시면 관련된 음식을 추천해 드릴게요."
     save_chat(session_id, user_id, off_topic, None, None, "assistant")
     return {"message": off_topic, "createdAt": created_at}
-
 
 # ────────────────────────────────────────────────
 # 8) 채팅 로그 API
